@@ -2,8 +2,12 @@
     <string name="app_name">MercadoLibreClonBedu</string>
     <string name="mis_compras">Mis Compras</string>
     <string name="categorias">Categorias</string>
+    <string name="pagar">¿Como quieres pagar?</string>
     <string name="list_item_status_entregado">Entregado</string>
     <string name="list_item_status_cancelado">Compra cancelada</string>
     <string name="ej_list_item">Ejemplo de producto</string>
     <string name="ej_list_item_categoria">Categoria ejemplo</string>
+    <string name="con_mercado_pago">Con Mercado Pago</string>
+    <string name="con_otras_formas_pago">Con otras formas de pago</string>
+    <string name="ej_list_item_tarjeta_credito">Ejemplo Tarjeta de Credito</string>
 </resources>
