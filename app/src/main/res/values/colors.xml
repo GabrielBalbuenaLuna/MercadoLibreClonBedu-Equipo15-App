@@ -10,4 +10,8 @@
     <color name="blue_menu">#1947E5</color>
     <color name="red">#FF1414</color>
     <color name="background">#EEEFF4</color>
+    <color name="blackColor">#18191F</color>
+    <color name="lightGray">#EEEFF4</color>
+    <color name="contrastColor">#0E3746</color>
+    <color name="lightBlue">#2291FF</color>
 </resources>
