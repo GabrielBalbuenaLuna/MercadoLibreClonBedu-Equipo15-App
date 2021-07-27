@@ -12,6 +12,8 @@
         <activity android:name=".Pagar"></activity>
         <activity android:name=".Categorias" />
         <activity android:name=".MisCompras" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".FavoritesActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
