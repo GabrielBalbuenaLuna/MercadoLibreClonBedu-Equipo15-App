@@ -68,34 +68,61 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="16dp"
-        android:layout_marginTop="12dp"
+        android:paddingVertical="8dp"
         android:background="@color/lightGray">
 
         <TextView
+            android:layout_toLeftOf="@id/ValorCupones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+            >
+        <TextView
+            android:id="@+id/ValorCupones"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:layout_marginLeft="106dp"
+            android:layout_marginRight="92dp"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_toRightOf="@id/ValorCupones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,89"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/Cupones"
+            android:layout_below="@id/ValorCupones"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cupones"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="64dp"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_below="@+id/ValorCupones"
             android:layout_toLeftOf="@id/Cupones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Compras"
             android:textColor="@color/black"
             android:textSize="12sp" />
-            >
         <TextView
-            android:id="@+id/Cupones"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cupones"
-            android:textColor="@color/black"
-            android:layout_marginHorizontal="56dp"
-            android:textSize="12sp" />
-        <TextView
+            android:layout_below="@+id/ValorCupones"
             android:layout_toRightOf="@id/Cupones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Puntos"
             android:textColor="@color/black"
             android:textSize="12sp" />
+
 
     </RelativeLayout>
 
@@ -130,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/celular"
                 android:textColor="@color/black"
-                android:textSize="21sp"
+                android:textSize="18sp"
                 android:paddingHorizontal="40dp"
                 android:drawableLeft="@drawable/phone"/>
             <TextView
@@ -141,7 +168,7 @@
                 android:layout_below="@+id/cel"
                 android:text="@string/correo"
                 android:textColor="@color/black"
-                android:textSize="21sp"
+                android:textSize="18sp"
                 android:paddingHorizontal="40dp"
                 android:drawableLeft="@drawable/email"/>
             <TextView
@@ -150,7 +177,7 @@
                 android:layout_below="@id/email"
                 android:text="@string/direccion"
                 android:textColor="@color/black"
-                android:textSize="21sp"
+                android:textSize="18sp"
                 android:paddingHorizontal="40dp"
                 android:drawableLeft="@drawable/map_marker"/>
 
