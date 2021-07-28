@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MercadoLibreClonBedu</string>
+    <string name="signup">Registrate</string>
+    <string name="fullname">Nombre Completo</string>
+    <string name="email">Correo Eléctronico</string>
+    <string name="username">Nombre de Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="loginhere">Inicia sesión aquí</string>
+    <string name="login">Acceder</string>
+    <string name="signuphere">¿No tienes cuenta? Registrate aquí</string>
+    <string name="loginButton">Entrar</string>
 </resources>
