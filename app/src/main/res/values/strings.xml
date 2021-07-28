@@ -10,4 +10,9 @@
     <string name="con_mercado_pago">Con Mercado Pago</string>
     <string name="con_otras_formas_pago">Con otras formas de pago</string>
     <string name="ej_list_item_tarjeta_credito">Ejemplo Tarjeta de Credito</string>
+    <string name="nombre_usuario">¡Hola Usuario!</string>
+    <string name="celular">55 5555 5555</string>
+    <string name="correo">usuario@gmail.com</string>
+    <string name="direccion">dirección</string>
+    <string name="precio_total">$ 330.00</string>
 </resources>
