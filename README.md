@@ -1,18 +1,43 @@
 <h1> Go Bedu Shopping </h1>
 
+## Definición del proyecto con el que se trabajará
+
+Para definir el proyecto a realizar, se propusieron diferentes apps ya existentes en el mercado que resuelven una problemática del mundo real, entre las cuales destacaron las siguientes:
+
+- Reproductor de música estilo Spotify.
+- Administrador de gastos.
+- E-commerce estilo Mercado Libre.
+
+Así, a partir de las opciones propuestas y considerando la complejidad del flujo de interacción que implicaría desarrollar cada una de estas apps, se decidió trabajar sobre la opción del E-commerce.
+
+## Alcances del proyecto
+
+Procurando que la realización del proyecto no sea muy complejo, se establecieron ciertos alcances para las acciones que se podrán realizar a través de la aplicación.
+De esta manera, se definió que las acciones básicas a implementar serán las siguientes:
+- Iniciar sesión (para usuarios ya registrados).
+- Registrar una nueva cuenta de usuario.
+- Buscar un producto.
+- Ver detalles de un producto.
+- Agregar productos a la sección de favoritos.
+- Agregar productos al carrito de compras.
+- Comprar uno o varios productos.
+- Ver los productos comprados anteriormente.
+- Ver el perfil del usuario.
+- Cerrar sesión
+
 ## ¿Qué es Go Bedu Shopping?
 
-Go Bedu Shopping es un ecommerce para aplicaciones moviles Android, donde se venden distintos tipos de estilos y ropa de distintas clases y materiales a distintos precios.
-
+Go Bedu Shopping es un e-commerce para aplicaciones moviles Android, donde se venden distintos tipos de estilos y ropa de distintas clases y materiales a distintos precios.
 
 ## ¿Cómo funciona Go Bedu Shopping?
 
-Hasta el momento se cuentan con 11 vistas, para empezar la vista de carga se veria algo asi:
+Hasta el momento se cuentan con un total de 11 vistas, las cuales se explican a continuación.
+Para comenzar, la vista de carga se vería de la siguiente manera:
 <p align="center">
   <img src="./app/src/assets/Pantalla Carga.png" width="350" title="hover text">
 </p>
 
-Se le mostrará al usuario una pantalla como esta para que se pueda registrar en nuestra aplicacion:
+Se le mostrará al usuario una pantalla como esta para que se pueda registrar en nuestra aplicación:
 <p align="center">
   <img src="./app/src/assets/SignIn.png" width="350" title="hover text">
 </p>
@@ -63,9 +88,14 @@ Tambien se tiene una vista para poder navegar entre las distintas categorias de 
   <img src="./app/src/assets/Categorias.png" width="350" title="hover text">
 </p>
 
-En el siguiente diagrama de flujo se muestra la navegacion de la applicacion en un caso de uso real:
+En el siguiente diagrama de flujo se muestra la navegacion de la aplicacion en un caso de uso real:
 <p align="center">
   <img src="./app/src/assets/DiagramaAppShop.jpg" width="350" title="hover text">
+</p>
+
+Visto desde otra perspectiva, el flujo de navegación del usuario es como se muestra en el siguiente esquema:
+<p align="center">
+  <img src="./app/src/assets/FlujoNavegacion.png" width="350" title="hover text">
 </p>
 
 ## Features
