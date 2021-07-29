@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MercadoLibreClonBedu">
+        <activity android:name=".Pagar"></activity>
+        <activity android:name=".Categorias" />
+        <activity android:name=".MisCompras" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".FavoritesActivity" />
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Register"></activity>
         <activity android:name=".LogIn" />
         <activity
@@ -20,7 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
