@@ -95,7 +95,7 @@ En el siguiente diagrama de flujo se muestra la navegacion de la aplicacion en u
 
 Visto desde otra perspectiva, el flujo de navegación del usuario es como se muestra en el siguiente esquema:
 <p align="center">
-  <img src="./app/src/assets/FlujoNavegacion.png" width="350" title="hover text">
+  <img src="./app/src/assets/FlujoNavegacion.PNG" width="350" title="hover text">
 </p>
 
 ## Features
