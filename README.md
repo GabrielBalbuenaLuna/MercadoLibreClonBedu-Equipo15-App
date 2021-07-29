@@ -65,7 +65,7 @@ Tambien se tiene una vista para poder navegar entre las distintas categorias de 
 
 En el siguiente diagrama de flujo se muestra la navegacion de la applicacion en un caso de uso real:
 <p align="center">
-  <img src="./app/src/assets/DiagramaAppShop.png" width="350" title="hover text">
+  <img src="./app/src/assets/DiagramaAppShop.jpg" width="350" title="hover text">
 </p>
 
 ## Features
