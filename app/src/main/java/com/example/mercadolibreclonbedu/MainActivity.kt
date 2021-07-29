@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var buttonProductView: Button
@@ -27,5 +28,19 @@ class MainActivity : AppCompatActivity() {
             val intent2 = Intent(this, FavoritesActivity::class.java)
             startActivity(intent2)
         }
+
+        var buttonLogIn = findViewById<Button>(R.id.LogIn)
+        buttonLogIn.setOnClickListener {
+            val intent = Intent(this, LogIn::class.java)
+            startActivity(intent)
+        }
+
+        var buttonRegister = findViewById<Button>(R.id.Register)
+        buttonRegister.setOnClickListener{
+            val intent = Intent(this, Register::class.java)
+            startActivity(intent)
+        }
+
     }
+
 }

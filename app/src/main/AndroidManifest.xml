@@ -15,12 +15,18 @@
         <activity android:name=".ProductActivity" />
         <activity android:name=".FavoritesActivity" />
         <activity android:name=".MainActivity">
+        <activity android:name=".Register"></activity>
+        <activity android:name=".LogIn" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

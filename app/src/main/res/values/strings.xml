@@ -15,4 +15,13 @@
     <string name="correo">usuario@gmail.com</string>
     <string name="direccion">dirección</string>
     <string name="precio_total">$ 330.00</string>
+    <string name="signup">Registrate</string>
+    <string name="fullname">Nombre Completo</string>
+    <string name="email">Correo Eléctronico</string>
+    <string name="username">Nombre de Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="loginhere">Inicia sesión aquí</string>
+    <string name="login">Acceder</string>
+    <string name="signuphere">¿No tienes cuenta? Registrate aquí</string>
+    <string name="loginButton">Entrar</string>
 </resources>
