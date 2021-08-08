@@ -5,6 +5,9 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.denzcoskun.imageslider.ImageSlider
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 
 class ProductActivity : AppCompatActivity()  {
 
@@ -23,7 +26,22 @@ class ProductActivity : AppCompatActivity()  {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_product)
+        setContentView(R.layout.fragment_product)
+
+        val imageList = ArrayList<SlideModel>() // Create image list
+
+// imageList.add(SlideModel("String Url" or R.drawable)
+// imageList.add(SlideModel("String Url" or R.drawable, "title") You can add title
+
+        imageList.add(SlideModel("https://bit.ly/2YoJ77H"))
+        imageList.add(SlideModel("https://bit.ly/2BteuF2"))
+        imageList.add(SlideModel("https://bit.ly/3fLJf72"))
+        imageList.add(SlideModel("https://bit.ly/3fLJf72"))
+
+        val imageSlider = findViewById<ImageSlider>(R.id.image_slider)
+        imageSlider.setImageList(imageList)
+        imageSlider.setImageList(imageList, ScaleTypes.FIT)
+
 
         buttonGetBack = findViewById(R.id.getBackIcon)
 
@@ -45,8 +63,10 @@ class ProductActivity : AppCompatActivity()  {
         }
 
         buttonMinus.setOnClickListener {
-            quantityProduct--
-            quantityText.text = quantityProduct.toString()
+            if (quantityProduct > 1) {
+                quantityProduct--
+                quantityText.text = quantityProduct.toString()
+            }
         }
 
         buttonSmallSize.setOnClickListener {
@@ -76,4 +96,5 @@ class ProductActivity : AppCompatActivity()  {
         }
 
     }
+
 }
