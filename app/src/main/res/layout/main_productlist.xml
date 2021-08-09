@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainProductList">
+    tools:context=".MainActivity">
     <fragment
-        android:id="@+id/fragmentDetail"
-        class="com.example.mercadolibreclonbedu.ProductFragment"
+        android:id="@+id/fragmentList"
+        class="com.example.mercadolibreclonbedu.ListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </LinearLayout>

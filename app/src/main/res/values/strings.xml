@@ -24,4 +24,16 @@
     <string name="login">Acceder</string>
     <string name="signuphere">¿No tienes cuenta? Registrate aquí</string>
     <string name="loginButton">Entrar</string>
+    <string name="quantityProduct">Quantity:</string>
+    <string name="minusQuantity">-</string>
+    <string name="plusQuantity">+</string>
+    <string name="size">Size:</string>
+    <string name="sizeS">S</string>
+    <string name="sizeM">M</string>
+    <string name="sizeL">L</string>
+    <string name="buyNow">Buy now</string>
+    <string name="addToCart">Add to cart</string>
+    <string name="addToFavorites">Add to favorites</string>
+    <string name="favoritesHeader">Favorites</string>
+    <string name="addToShoppingCard">Add to Shopping Cart</string>
 </resources>

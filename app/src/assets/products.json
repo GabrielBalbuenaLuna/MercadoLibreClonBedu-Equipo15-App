@@ -1,0 +1,37 @@
+[{
+  "id": 1,
+  "name": "Black men's casual sneakers\"",
+  "price": "$250",
+  "rating": 3.5,
+  "arrival": 7,
+  "coverImage": "https://ss237.liverpool.com.mx/xl/1091077815.jpg",
+  "setImages": [
+    "https://ss237.liverpool.com.mx/xl/1091077815.jpg",
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/d285610e30664900b857a7fa00ed0201_9366/Tenis_Superstar_Blanco_C77124_01_standard.jpg",
+    "https://www.dpstreet.mx/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1019110-0100V1.jpg"
+  ],
+  "setSizes": [
+    "Height: 30 cm, Width: 20 cm, Heel: 5 cm",
+    "Height: 32 cm, Width: 22 cm, Heel: 5 cm",
+    "Height: 34 cm, Width: 24 cm, Heel: 5 cm"
+  ]
+},
+  {
+    "id": 2,
+    "name": "Black men's casual sneakers\"",
+    "price": "$250",
+    "rating": 3.5,
+    "arrival": 7,
+    "coverImage": "https://www.srbalon.com/cdnassets/595299-11-1_l.jpg",
+    "setImages": [
+      "https://www.srbalon.com/cdnassets/595299-11-3adl.jpg",
+      "https://www.srbalon.com/cdnassets/595299-11-1_l.jpg",
+      "https://static.dafiti.com.co/p/puma-4907-9016801-1-product.jpg"
+    ],
+    "setSizes": [
+      "Height: 68 cm, Width: 45 cm, Heel: 100 cm",
+      "Height: 70 cm, Width: 56 cm, Heel: 115 cm",
+      "Height: 74 cm, Width: 72 cm, Heel: 125 cm"
+    ]
+  }
+]
