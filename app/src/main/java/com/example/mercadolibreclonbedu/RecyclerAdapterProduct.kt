@@ -1,17 +1,21 @@
 package com.example.mercadolibreclonbedu
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import java.io.Serializable
 
 class RecyclerAdapterProduct(
     private val context: Context,
     private val products: MutableList<Product>,
     private val clickListener: (Product) -> Unit): RecyclerView.Adapter<RecyclerAdapterProduct.ViewHolder>() {
+
+    lateinit private var additem : ImageView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -19,10 +23,13 @@ class RecyclerAdapterProduct(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
         val product = products.get(position)
         holder.bind(product, context)
 
         holder.view.setOnClickListener{clickListener(product)}
+
+
     }
 
 

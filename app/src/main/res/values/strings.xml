@@ -34,4 +34,6 @@
     <string name="buyNow">Buy now</string>
     <string name="addToCart">Add to cart</string>
     <string name="addToFavorites">Add to favorites</string>
+    <string name="favoritesHeader">Favorites</string>
+    <string name="addToShoppingCard">Add to Shopping Cart</string>
 </resources>

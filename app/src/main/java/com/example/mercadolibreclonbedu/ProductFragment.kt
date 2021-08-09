@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.RatingBar
-import android.widget.TextView
+import android.widget.*
 import androidx.fragment.app.Fragment
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.constants.ScaleTypes
@@ -34,6 +31,9 @@ class ProductFragment : Fragment() {
     private lateinit var sizeSpecifications: TextView
 
     private lateinit var imageSlider: ImageSlider
+
+
+    private lateinit var addItemFav: Button
 
 
     private var quantityProduct = 1;
@@ -65,6 +65,8 @@ class ProductFragment : Fragment() {
         buttonSmallSize = view.findViewById(R.id.sizeS)
         buttonMediumSize = view.findViewById(R.id.sizeM)
         buttonLargeSize = view.findViewById(R.id.sizeL)
+
+        addItemFav = view.findViewById(R.id.addToFavbtn)
 
 
         buttonAdd.setOnClickListener {
@@ -127,6 +129,12 @@ class ProductFragment : Fragment() {
             buttonMediumSize.setBackgroundResource(R.drawable.rounded_deselect)
             buttonLargeSize.setBackgroundResource(R.drawable.rounded_button_white)
             sizeSpecifications.text = product.setSizes[2]
+        }
+
+        addItemFav.setOnClickListener {
+            val intent = Intent(activity, FavoritesActivity::class.java)
+            intent.putExtra("Fav", product)
+            startActivity(intent)
         }
 
 

@@ -1,85 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightGray"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightGray">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardFavorites"
+    <!--Encabezado -->
+    <RelativeLayout
+        android:id="@+id/headerFavorites"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_toLeftOf="@id/Account"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:src="@drawable/cart_outline" />
+        <TextView
+            android:id="@+id/Account"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favoritesHeader"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="40dp" />
+        <ImageView
+            android:layout_toRightOf="@id/Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bell_outline" />
+    </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/cardImage"
-                android:src="@drawable/pink_hat"
-                android:paddingHorizontal="24dp"
-                android:paddingVertical="26dp"
-                style="@style/cardImageFavorites"
-                />
-
-            <TextView
-                android:id="@+id/cardPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="$120"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="20sp"
-                android:textColor="@color/blackColor"
-                />
-
-            <TextView
-                android:id="@+id/cardDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cute pink women’s hat"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="15sp"
-                android:textColor="@color/blackColor"
-                android:layout_below="@+id/cardPrice"
-                />
-
-            <TextView
-                android:id="@+id/cardAddCart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Add to shopping cart"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="10sp"
-                android:textColor="@color/blackColor"
-                android:layout_below="@+id/cardDescription"
-                android:drawableLeft="@drawable/add_cart"
-                android:drawablePadding="8dp"
-                />
-
-            <TextView
-                android:id="@+id/cardDelivery"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Free delivery"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="10sp"
-                android:textColor="@color/blackColor"
-                android:layout_below="@+id/cardAddCart"
-                android:drawableLeft="@drawable/bus_delivery"
-                android:drawablePadding="8dp"
-                />
-
-
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFavoriteProducts"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/headerFavorites"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_favorites"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

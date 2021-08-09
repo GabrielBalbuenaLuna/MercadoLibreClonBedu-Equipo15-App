@@ -1,12 +1,16 @@
 package com.example.mercadolibreclonbedu
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.gson.Gson
 import kotlinx.android.synthetic.main.fragment_list.*
+import java.io.IOException
 import java.io.InputStream
 
 
@@ -27,9 +31,16 @@ class ListFragment : Fragment() {
     //generamos datos dummy con este método
     private fun getProducts(): MutableList<Product>{
         var products:MutableList<Product> = ArrayList()
+        val jsonFileString = getActivity()?.getApplicationContext()?.let { loadData(it) }
+        println("MIS DATOS")
+        if (jsonFileString != null) {
+            println("MY DATA"+ jsonFileString)
+        }
         val imageList = arrayListOf<String>("https://bit.ly/2YoJ77H", "https://bit.ly/2BteuF2", "https://bit.ly/3fLJf72", "https://bit.ly/3fLJf72")
         val sizesList = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32cm, Width: 22 cm, Heel: 5 cm", "Height: 34cm, Width: 24 cm, Heel: 5 cm")
 
+        products.add(Product("Control ps5", "$1400",4.6f, 10, R.drawable.shoes, imageList, sizesList))
+        products.add(Product("Control ps5", "$1400",4.6f, 10, R.drawable.shoes, imageList, sizesList))
         products.add(Product("Control ps5", "$1400",4.6f, 10, R.drawable.shoes, imageList, sizesList))
 
         return products
@@ -54,6 +65,19 @@ class ListFragment : Fragment() {
 
     fun setListener(l: (Product) ->Unit){
         listener = l
+    }
+
+    fun loadData(context: Context): String? {
+        val jsonString: String
+
+        try {
+            jsonString = context.assets.open("products.json").bufferedReader().use { it.readText() }
+
+            return jsonString
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+        return null
     }
 
 

@@ -59,6 +59,7 @@
                 app:layout_constraintGuide_end="60dp" />
 
             <ImageView
+                android:id="@+id/addFavoriteItemList"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/heart_icon"
