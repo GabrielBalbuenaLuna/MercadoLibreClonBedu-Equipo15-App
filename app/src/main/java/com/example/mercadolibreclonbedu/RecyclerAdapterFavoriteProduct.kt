@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerAdapterFavoriteProduct(
     private val context: Context,
-    private val product: Product,
+    private val products: MutableList<Product>,
     private val clickListener: (Product) -> Unit): RecyclerView.Adapter<RecyclerAdapterFavoriteProduct.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -19,7 +19,7 @@ class RecyclerAdapterFavoriteProduct(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-//        val product = products.get(position)
+        val product = products.get(position)
         holder.bind(product, context)
 
         holder.view.setOnClickListener{clickListener(product)}
@@ -27,7 +27,7 @@ class RecyclerAdapterFavoriteProduct(
 
 
     override fun getItemCount(): Int {
-        return 1
+        return products.size
     }
 
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
