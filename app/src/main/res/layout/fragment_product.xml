@@ -330,11 +330,13 @@
                 android:orientation="horizontal"
                 app:layout_constraintGuide_begin="710dp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addToFavbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/addToFavorites"
-                android:textColor="@color/blackColor"
+                android:backgroundTint="@color/colorAqua"
+                android:textColor="@color/white"
                 android:drawableLeft="@drawable/heart_icon"
                 app:layout_constraintLeft_toLeftOf="@id/guideline7"
                 app:layout_constraintRight_toRightOf="@id/guideline8"
