@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import io.paperdb.Paper
 
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonFavoritesView: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Paper.init(this)
         setContentView(R.layout.activity_main)
 
         buttonProductView = findViewById(R.id.buttonProductView)
