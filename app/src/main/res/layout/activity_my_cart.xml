@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGray"
+    tools:context=".MyCart">
+
+    <!--Encabezado -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_toLeftOf="@id/Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_outline" />
+        <TextView
+            android:id="@+id/Account"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mi carrito"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="40dp" />
+        <ImageView
+            android:layout_toRightOf="@id/Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bell_outline" />
+    </RelativeLayout>
+
+    <!--Productos en el carrito -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cardProduct1"
+                android:src="@drawable/pink_hat"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="26dp"
+                style="@style/cardImageFavorites" />
+            <TextView
+                android:id="@+id/cardPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$120"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/blackColor" />
+            <TextView
+                android:id="@+id/cardDescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cute pink women’s hat"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/blackColor"
+                android:layout_below="@+id/cardPrice1" />
+            <TextView
+                android:id="@+id/cardDelivery1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free delivery"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="8dp"
+                android:textSize="10sp"
+                android:textColor="@color/blackColor"
+                android:layout_below="@+id/cardDescription1"
+                android:drawableLeft="@drawable/bus_delivery"
+                android:drawablePadding="8dp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cardImage2"
+                android:src="@drawable/moon_shirt"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="26dp"
+                style="@style/cardImageFavorites" />
+            <TextView
+                android:id="@+id/cardPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$210"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/blackColor" />
+            <TextView
+                android:id="@+id/cardDescription2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moon men's shirt"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/blackColor"
+                android:layout_below="@+id/cardPrice2" />
+            <TextView
+                android:id="@+id/cardDelivery2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free delivery"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="8dp"
+                android:textSize="10sp"
+                android:textColor="@color/blackColor"
+                android:layout_below="@+id/cardDescription2"
+                android:drawableLeft="@drawable/bus_delivery"
+                android:drawablePadding="8dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--Espacio libre -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="188dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/lightGray">
+
+    </RelativeLayout>
+
+    <!--Información Personal -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="24dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:text="Total"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/precio_total"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/misComprasButton"
+            android:layout_below="@+id/textoTotal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="Buy now"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_buy_now"
+            />
+
+    </RelativeLayout>
+
+    <!--Barra de Menus -->
+    <RelativeLayout
+        android:id="@+id/menuCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center"
+        android:background="@color/lightGray">
+
+
+    </RelativeLayout>
+
+</LinearLayout>
