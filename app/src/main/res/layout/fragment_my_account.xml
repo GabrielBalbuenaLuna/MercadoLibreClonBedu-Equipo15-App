@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/lightGray"
-    tools:context=".MyAccount">
+    tools:context=".MyAccountFragment">
 
     <!--Encabezado -->
     <RelativeLayout
@@ -78,7 +78,7 @@
             android:text="1"
             android:textColor="@color/black"
             android:textSize="12sp" />
-            >
+        >
         <TextView
             android:id="@+id/ValorCupones"
             android:layout_centerHorizontal="true"
@@ -213,14 +213,4 @@
 
     </LinearLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        app:itemBackground="@color/colorPrimary"
-        app:itemTextColor="@drawable/selector"
-        app:itemIconTint="@drawable/selector"
-        app:menu="@menu/bottom_menu"
-        />
 </LinearLayout>

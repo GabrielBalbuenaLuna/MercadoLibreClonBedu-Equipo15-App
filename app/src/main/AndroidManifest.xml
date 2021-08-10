@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mercadolibreclonbedu">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,16 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MercadoLibreClonBedu">
-        <activity android:name=".Pagar"></activity>
+        <activity android:name=".Pagar" />
         <activity android:name=".Categorias" />
         <activity android:name=".MisCompras" />
         <activity android:name=".ProductActivity" />
-        <activity android:name=".MainProductList" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".FavoritesActivity" />
-        <activity android:name=".DetailActivity"/>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Register"></activity>
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Register" />
         <activity android:name=".LogIn" />
+        <activity android:name=".MyAccount" />
+        <activity android:name=".MainProductList" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

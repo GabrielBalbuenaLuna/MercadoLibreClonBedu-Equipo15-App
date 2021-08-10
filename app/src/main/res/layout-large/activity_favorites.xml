@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FavoritesActivity">
 
     <fragment
-        android:id="@+id/fragmentListFavorites"
-        class="com.example.mercadolibreclonbedu.ListFragment"
+        android:id="@+id/fragmentList"
+        class="com.example.mercadolibreclonbedu.FavoritesListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
