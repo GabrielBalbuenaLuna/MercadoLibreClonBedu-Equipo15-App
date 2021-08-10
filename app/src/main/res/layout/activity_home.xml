@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavoritesActivity">
+    tools:context=".HomeActivity">
     <fragment
-        android:id="@+id/fragmentListFavorites"
-        class="com.example.mercadolibreclonbedu.FavoritesListFragment"
+        android:id="@+id/fragmentHome"
+        class="com.example.mercadolibreclonbedu.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

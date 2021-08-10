@@ -15,7 +15,7 @@
         <activity android:name=".Categorias" />
         <activity android:name=".MisCompras" />
         <activity android:name=".ProductActivity" />
-        <activity android:name=".MainProductList" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".FavoritesActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".MainActivity" />
