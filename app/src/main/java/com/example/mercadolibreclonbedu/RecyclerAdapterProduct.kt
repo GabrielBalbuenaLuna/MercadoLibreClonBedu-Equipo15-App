@@ -7,10 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import java.io.Serializable
-import kotlin.contracts.contract
 
 class RecyclerAdapterProduct(
     private val context: Context,
