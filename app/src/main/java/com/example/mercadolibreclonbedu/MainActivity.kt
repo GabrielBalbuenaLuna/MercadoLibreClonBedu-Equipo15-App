@@ -4,14 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import io.paperdb.Paper
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var buttonProductView: Button
-
     private lateinit var buttonFavoritesView: Button
+    //private lateinit var navegacion: BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Paper.init(this)
@@ -38,11 +40,29 @@ class MainActivity : AppCompatActivity() {
         }
 
         var buttonRegister = findViewById<Button>(R.id.Register)
-        buttonRegister.setOnClickListener{
-            val intent = Intent(this, Register::class.java)
+        buttonRegister.setOnClickListener {
+            val intent = Intent(this, MyAccount::class.java)
             startActivity(intent)
         }
 
+        /*
+        navegacion.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.favoritos -> {
+                    val intent = Intent(this, FavoritesActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.carrito -> {
+                    val intent = Intent(this, MyCart::class.java)
+                    startActivity(intent)
+                }
+                R.id.cuenta -> {
+                    val intent = Intent(this, MyAccount::class.java)
+                    startActivity(intent)
+                }
+            }
+            true
+        }
+         */
     }
-
 }

@@ -36,8 +36,6 @@
     <string name="addToFavorites">Add to favorites</string>
     <string name="favoritesHeader">Favorites</string>
     <string name="addToShoppingCard">Add to Shopping Cart</string>
-    <string name="homeHeader">Shop</string>
-    <string name="men">Men</string>
-    <string name="women">Women</string>
-    <string name="kids">Kids</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
