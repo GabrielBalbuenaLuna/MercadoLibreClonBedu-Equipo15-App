@@ -16,7 +16,7 @@ class MainFragment : Fragment(){
         if (savedInstanceState == null) {
             parentFragmentManager
                 .beginTransaction()
-                .add(R.id.frame_container, FirstFragment())
+                .add(R.id.frame_container, HomeFragment())
                 .commit()
         }
     }
