@@ -10,8 +10,9 @@ import io.paperdb.Paper
 class MainActivity : AppCompatActivity() {
 
     private lateinit var buttonProductView: Button
-
     private lateinit var buttonFavoritesView: Button
+    private lateinit var buttonMyAccount: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Paper.init(this)
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         buttonProductView = findViewById(R.id.buttonProductView)
         buttonFavoritesView = findViewById(R.id.buttonFavoritesView)
+        buttonMyAccount = findViewById(R.id.buttonMyAccount)
 
 
         buttonProductView.setOnClickListener {
@@ -29,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         buttonFavoritesView.setOnClickListener {
             val intent2 = Intent(this, FavoritesActivity::class.java)
             startActivity(intent2)
+        }
+        buttonMyAccount.setOnClickListener {
+            val intent3 = Intent(this, MyAccount::class.java)
+            startActivity(intent3)
         }
 
         var buttonLogIn = findViewById<Button>(R.id.LogIn)
