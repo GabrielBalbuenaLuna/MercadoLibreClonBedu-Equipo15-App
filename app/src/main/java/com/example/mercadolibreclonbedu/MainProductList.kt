@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.Guideline
+import java.lang.NullPointerException
 
 class MainProductList : AppCompatActivity() {
 
@@ -12,8 +13,12 @@ class MainProductList : AppCompatActivity() {
         setContentView(R.layout.main_productlist)
 
         val bundle = intent.extras
-
-        val listProduct : ArrayList<Product> = bundle?.getParcelableArrayList<Product>("LISTA") as ArrayList<Product>
+        var listProduct = ArrayList<Product>()
+        try {
+             listProduct = bundle?.getParcelableArrayList<Product>("LISTA") as ArrayList<Product>
+        } catch (Exception : NullPointerException) {
+            listProduct.add(Product("Wish List Empty", "", 0f, 0, 0, arrayListOf(), arrayListOf()))
+        }
 
         val args = Bundle()
 

@@ -31,8 +31,8 @@ class MainFragment : Fragment(){
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.firstFragment -> { loadFragment(FirstFragment()) }
-                R.id.secondFragment -> { loadFragment(SecondFragment()) }
+                R.id.firstFragment -> { loadFragment(HomeFragment()) }
+                R.id.secondFragment -> { loadFragment(FavoritesListFragment()) }
                 R.id.thirdFragment -> { loadFragment(MyCartFragment()) }
                 R.id.fourthFragment -> { loadFragment(MyAccountFragment()) }
             }
