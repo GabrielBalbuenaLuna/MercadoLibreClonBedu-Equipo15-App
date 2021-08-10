@@ -9,17 +9,12 @@ import kotlinx.android.synthetic.main.item_product.*
 
 class FavoritesActivity : AppCompatActivity() {
 
-    companion object {
-        val FAV = "FAV"
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favorites)
         val bundle = intent.extras
         println("Que es bundle" + bundle)
         val productFav : Product? = bundle?.getParcelable("Fav")
-        println("que me pasas" + productFav)
         val args = Bundle()
         args.putParcelable("productFav", productFav)
         val listFragmentFavorites = supportFragmentManager.findFragmentById(R.id.fragmentListFavorites) as FavoritesListFragment

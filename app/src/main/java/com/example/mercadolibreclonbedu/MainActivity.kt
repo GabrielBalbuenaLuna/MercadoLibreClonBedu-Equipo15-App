@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
 
         buttonProductView.setOnClickListener {
-            val intent1 = Intent(this, MainProductList::class.java)
+            val intent1 = Intent(this, HomeActivity::class.java)
             startActivity(intent1)
         }
 

@@ -18,4 +18,10 @@
     <color name="colorText">#18191F</color>
     <color name="colorPrimary">#2291FF</color>
     <color name="colorAqua">#00C6AE</color>
+    <color name="lightYellow">#FFF4CC</color>
+    <color name="darkYellow">#FFBD12</color>
+    <color name="lightOrange">#FFE8E8</color>
+    <color name="darkOrange">#F95A2C</color>
+    <color name="lightGreen">#D6FCF7</color>
+    <color name="darkGreen">#00C6AE</color>
 </resources>
