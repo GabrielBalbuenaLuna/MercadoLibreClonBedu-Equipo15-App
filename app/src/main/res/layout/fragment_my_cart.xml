@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/lightGray"
     tools:context=".MyCartFragment">
 
     <!--Encabezado -->
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/headerMyCart"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <androidx.appcompat.widget.Toolbar
             app:navigationIcon="@drawable/cart_outline"
@@ -29,126 +32,23 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!--Productos en el carrito -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card1"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFavoriteProducts"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/headerMyCart"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        tools:listitem="@layout/item_favorites"
+        />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/cardProduct1"
-                android:src="@drawable/pink_hat"
-                android:paddingHorizontal="24dp"
-                android:paddingVertical="26dp"
-                style="@style/cardImageFavorites" />
-            <TextView
-                android:id="@+id/cardPrice1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="$120"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="20sp"
-                android:textColor="@color/blackColor" />
-            <TextView
-                android:id="@+id/cardDescription1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cute pink women’s hat"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="15sp"
-                android:textColor="@color/blackColor"
-                android:layout_below="@+id/cardPrice1" />
-            <TextView
-                android:id="@+id/cardDelivery1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Free delivery"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="10sp"
-                android:textColor="@color/blackColor"
-                android:layout_below="@+id/cardDescription1"
-                android:drawableLeft="@drawable/bus_delivery"
-                android:drawablePadding="8dp" />
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/cardImage2"
-                android:src="@drawable/moon_shirt"
-                android:paddingHorizontal="24dp"
-                android:paddingVertical="26dp"
-                style="@style/cardImageFavorites" />
-            <TextView
-                android:id="@+id/cardPrice2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="$210"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="20sp"
-                android:textColor="@color/blackColor" />
-            <TextView
-                android:id="@+id/cardDescription2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Moon men's shirt"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="15sp"
-                android:textColor="@color/blackColor"
-                android:layout_below="@+id/cardPrice2" />
-            <TextView
-                android:id="@+id/cardDelivery2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Free delivery"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="8dp"
-                android:textSize="10sp"
-                android:textColor="@color/blackColor"
-                android:layout_below="@+id/cardDescription2"
-                android:drawableLeft="@drawable/bus_delivery"
-                android:drawablePadding="8dp" />
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-
-    <!--Espacio libre -->
+    <!--Sección Buy Now -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="188dp"
-        android:layout_marginTop="12dp"
-        android:background="@color/lightGray">
-
-    </RelativeLayout>
-
-    <!--Información Personal -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:paddingVertical="24dp"
         android:orientation="vertical"
         android:background="@color/white">
@@ -189,17 +89,4 @@
 
     </RelativeLayout>
 
-    <!--Barra de Menus -->
-    <RelativeLayout
-        android:id="@+id/menuCarrito"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-
-        android:gravity="center"
-        android:background="@color/lightGray">
-
-
-    </RelativeLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

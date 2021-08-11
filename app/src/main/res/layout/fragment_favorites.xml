@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/lightGray">
 
+    <!--Encabezado -->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/headerFavorites"
         android:layout_width="match_parent"
@@ -19,7 +20,8 @@
             android:id="@+id/favorites_bar"
             style="@style/Widget.Toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name">
             <TextView
                 android:layout_gravity="center"
                 style="@style/Toolbar"
