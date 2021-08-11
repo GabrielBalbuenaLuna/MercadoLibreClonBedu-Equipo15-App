@@ -2,6 +2,7 @@ package com.example.mercadolibreclonbedu
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.Guideline
 import java.lang.NullPointerException
@@ -17,7 +18,9 @@ class MainProductList : AppCompatActivity() {
         try {
              listProduct = bundle?.getParcelableArrayList<Product>("LISTA") as ArrayList<Product>
         } catch (Exception : NullPointerException) {
-            listProduct.add(Product("Wish List Empty", "", 0f, 0, 0, arrayListOf(), arrayListOf()))
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+//            listProduct.add(Product("Wish List Empty", "", 0f, 0, 0, arrayListOf(), arrayListOf()))
         }
 
         val args = Bundle()
