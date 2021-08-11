@@ -28,7 +28,7 @@ class LogIn : AppCompatActivity() {
 
             if(user.text?.trim()!!.isNotEmpty() && password.text?.trim()!!.isNotEmpty()){
                 if (user.text?.trim().toString() == "root" && password.text?.trim().toString() == "1234"){
-                    Toast.makeText(this, "Bienvenido :)", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Welcome :)", Toast.LENGTH_LONG).show()
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }else{
