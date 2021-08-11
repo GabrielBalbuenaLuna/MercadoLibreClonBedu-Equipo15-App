@@ -8,9 +8,30 @@
     android:background="@color/lightGray"
     tools:context=".MyAccountFragment">
 
+    <!--Encabezado -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            app:navigationIcon="@drawable/cart_outline"
+            android:id="@+id/myAccount_bar"
+            style="@style/Widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_gravity="center"
+                style="@style/Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/myAccountHeader"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:padding="20dp"
         android:background="@color/colorPrimary">
 
@@ -52,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:layout_marginTop="-100dp">
+        android:layout_marginTop="-64dp">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"

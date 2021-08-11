@@ -35,8 +35,13 @@
     <string name="buyNow">Buy now</string>
     <string name="addToCart">Add to cart</string>
     <string name="addToFavorites">Add to favorites</string>
+    <string name="shopHeader">Home</string>
     <string name="favoritesHeader">Favorites</string>
+    <string name="myCartHeader">My Cart</string>
+    <string name="myAccountHeader">My Account</string>
     <string name="addToShoppingCard">Add to Shopping Cart</string>
+    <string name="alert">Alerts Enabled/Disabled</string>
+    <string name="settings">Settings</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="homeHeader">Shop</string>
