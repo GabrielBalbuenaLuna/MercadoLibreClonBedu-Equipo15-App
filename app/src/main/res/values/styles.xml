@@ -4,10 +4,14 @@
         <item name="android:layout_width">128dp</item>
         <item name="android:layout_height">120dp</item>
     </style>
-
     <style name="BottomNavigation">
         <item name="android:background">@color/background</item>
         <item name="itemIconTint">@color/black</item>
         <item name="itemTextColor">@color/black</item>
+    </style>
+    <style name="StyleGuide">
+        <item name="background">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/textNormal</item>
+        <item name="android:textColorSecondary">@color/textLight</item>
     </style>
 </resources>
