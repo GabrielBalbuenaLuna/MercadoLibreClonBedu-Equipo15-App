@@ -100,9 +100,6 @@ class ProductFragment : Fragment() {
 //        imageSlider.setImageList(product.setImages, ScaleTypes.FIT)
         val imageList = ArrayList<SlideModel>()
 
-        println("hola" + product.price)
-        println("amigo" + product.setImages)
-
 
         for (image in product.setImages!!) {
             imageList.add(SlideModel(image))
