@@ -19,10 +19,11 @@ class MainActivity : AppCompatActivity() {
         Paper.init(this)
         setContentView(R.layout.activity_main)
 
+
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.fragment_container, LoginFragment())
+                .add(R.id.fragment_container, MainFragment())
                 .commit()
         }
 
