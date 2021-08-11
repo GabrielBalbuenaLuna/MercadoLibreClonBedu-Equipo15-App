@@ -19,7 +19,8 @@
             android:id="@+id/shop_bar"
             style="@style/Widget.Toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name">
             <TextView
                 android:layout_gravity="center"
                 style="@style/Toolbar"
