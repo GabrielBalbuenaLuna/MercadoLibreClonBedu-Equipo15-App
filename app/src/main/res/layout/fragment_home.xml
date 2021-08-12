@@ -6,37 +6,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!--Encabezado -->
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/headerHome"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/headerHomeMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <androidx.appcompat.widget.Toolbar
-            app:navigationIcon="@drawable/cart_outline"
-            android:id="@+id/shop_bar"
-            style="@style/Widget.Toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:title="@string/app_name">
-            <TextView
-                android:layout_gravity="center"
-                style="@style/Toolbar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/homeHeader"/>
-        </androidx.appcompat.widget.Toolbar>
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-    </com.google.android.material.appbar.AppBarLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/headerHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:liftOnScroll="true"
+            app:layout_constraintEnd_toEndOf="parent">
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:expandedTitleGravity="bottom"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                >
+                <androidx.appcompat.widget.Toolbar
+                    app:navigationIcon="@drawable/cart_outline"
+                    android:id="@+id/shop_bar"
+                    style="@style/Widget.Toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:title="@string/app_name">
+                    <TextView
+                        android:layout_gravity="center"
+                        style="@style/Toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homeHeader"/>
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/categoriesSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headerHome"
+        app:layout_constraintTop_toBottomOf="@id/headerHomeMenu"
         android:paddingVertical="24dp"
         >
         <LinearLayout
@@ -149,6 +176,31 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomeFragment"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesSection"
+        >
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:sliderAnimationDuration="4000"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="4000"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true" />
+
+    </RelativeLayout>
+
 
 
 
