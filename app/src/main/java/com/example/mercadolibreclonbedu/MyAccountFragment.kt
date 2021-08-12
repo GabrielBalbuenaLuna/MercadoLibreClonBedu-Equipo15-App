@@ -1,10 +1,12 @@
 package com.example.mercadolibreclonbedu
 
 import android.app.Activity
+import android.app.ProgressDialog
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -57,6 +59,12 @@ class MyAccountFragment : Fragment() {
                 builder.setPositiveButton("Yes", { dialogInterface: DialogInterface, i: Int ->
                     val intent = Intent(activity, LogIn::class.java)
                     startActivity(intent)
+                    // Cerrando Sesión
+                    val progressDialog = ProgressDialog(requireActivity())
+                    progressDialog.setMessage("Disconnecting...")
+                    progressDialog.setCancelable(false)
+                    progressDialog.show()
+                    Handler().postDelayed({progressDialog.dismiss()},3500)
                 })
                 builder.setNegativeButton("No", { dialogInterface: DialogInterface, i: Int -> })
                 builder.show()
