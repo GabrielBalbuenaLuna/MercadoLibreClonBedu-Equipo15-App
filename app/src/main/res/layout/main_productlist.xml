@@ -4,7 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <!--Encabezado -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/headerHomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            app:navigationIcon="@drawable/cart_outline"
+            android:id="@+id/homeFragment_bar"
+            style="@style/Widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name">
+            <TextView
+                android:layout_gravity="center"
+                style="@style/Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homeHeader"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
     <fragment
         android:id="@+id/fragmentList"
         class="com.example.mercadolibreclonbedu.ListFragment"

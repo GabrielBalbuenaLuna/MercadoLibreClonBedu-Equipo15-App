@@ -32,11 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         // Mensaje Iniciando sesión
         val progressDialog = ProgressDialog(this)
-        progressDialog.setMessage("Loading user data...")
+        progressDialog.setMessage("Loading ...")
         progressDialog.setCancelable(false)
         progressDialog.show()
 
-        Handler().postDelayed({progressDialog.dismiss()},3500)
+        Handler().postDelayed({progressDialog.dismiss()},3000)
 
     }
 

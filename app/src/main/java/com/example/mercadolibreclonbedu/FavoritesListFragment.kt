@@ -79,6 +79,18 @@ class FavoritesListFragment : Fragment() {
         menuInflater.inflate(R.menu.toolbar_menu, menu)
         return super.onCreateOptionsMenu(menu,menuInflater)
     }
+    //asignamos las acciones para cada opción del AppBar
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        var msg = ""
 
+        when(item.itemId){
+            R.id.beduHome -> {
+                val intent = Intent(activity, MainActivity::class.java)
+                startActivity(intent)
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
 
 }

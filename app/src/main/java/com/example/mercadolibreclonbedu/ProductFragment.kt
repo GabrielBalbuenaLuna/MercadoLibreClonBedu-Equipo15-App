@@ -82,8 +82,9 @@ class ProductFragment : Fragment() {
         }
 
         buttonGetBack.setOnClickListener {
-            val intent = Intent(activity, MainProductList::class.java)
-            startActivity(intent)
+            //val intent = Intent(activity, MainFragment::class.java)
+            //startActivity(intent)
+            (activity as MainActivity).navigateTo(MainFragment(),false)
         }
 
 
