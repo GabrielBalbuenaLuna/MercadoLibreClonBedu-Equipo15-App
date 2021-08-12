@@ -7,6 +7,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
+import com.smarteist.autoimageslider.SliderView
 import kotlinx.android.synthetic.main.fragment_home.view.*
 import kotlinx.android.synthetic.main.fragment_my_account.view.*
 
@@ -98,11 +99,26 @@ class HomeFragment : Fragment() {
             intent.putExtras(bundle)
             startActivity(intent)
         }
+
+        val imageSlider = view.findViewById<SliderView>(R.id.imageSlider)
+        val imageList: ArrayList<String> = ArrayList()
+        imageList.add("https://dam.vanidades.com/wp-content/uploads/2021/04/moda-tendencias-primavera-verano-2021-1-900x550.jpg")
+        imageList.add("https://static1.abc.es/media/summum/2019/10/18/PRINCIPALjustufs_hansen-kCSC--620x349@abc.jpg")
+        imageList.add("https://childrens-spaces.com/wp-content/uploads/2019/02/moda-infantil.jpg")
+        setImageInSlider(imageList, imageSlider)
         return view
+    }
+
+    private fun setImageInSlider(images: ArrayList<String>, imageSlider: SliderView) {
+        val adapter = MySliderImageAdapter()
+        adapter.renewItems(images)
+        imageSlider.setSliderAdapter(adapter)
+        imageSlider.isAutoCycle = true
+        imageSlider.startAutoCycle()
     }
     //Agregar el menú de opciones al AppBar
     override fun onCreateOptionsMenu(menu: Menu, menuInflater: MenuInflater){
-        menuInflater.inflate(R.menu.toolbar_menu, menu)
+        menuInflater.inflate(R.menu.toolbar_menu_home, menu)
         return super.onCreateOptionsMenu(menu,menuInflater)
     }
 }
