@@ -1,8 +1,14 @@
 package com.example.mercadolibreclonbedu
 
+import android.app.ProgressDialog
+import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.*
+import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
@@ -43,6 +49,7 @@ class MyCartFragment : Fragment() {
             loadFragment(Pagar())
         }
 
+
         // infla el layout para este Fragment
         return view
     }
@@ -60,6 +67,19 @@ class MyCartFragment : Fragment() {
 
         return products
     }
+    private fun deleteProducts(){
+        recyclerMyCartProducts.removeAllViewsInLayout()
+        var newProducts = mutableListOf<Product>()
+        newProducts.add(Product("My Cart List Is Empty", "", 0f, 0, 0, arrayListOf(), arrayListOf()))
+        // indicamos que tiene un tamaño fijo
+        recyclerMyCartProducts.setHasFixedSize(true)
+        // indicamos el tipo de layoutManager
+        recyclerMyCartProducts.layoutManager = LinearLayoutManager(activity)
+        //seteando el Adapter
+        mAdapter = RecyclerAdapterMyCartProduct( requireActivity(), newProducts, listener)
+        //asignando el Adapter al RecyclerView
+        recyclerMyCartProducts.adapter = mAdapter
+    }
 
     //configuramos lo necesario para desplegar el RecyclerView
     private fun setUpRecyclerView(){
@@ -71,7 +91,6 @@ class MyCartFragment : Fragment() {
         mAdapter = RecyclerAdapterMyCartProduct( requireActivity(), getProducts(), listener)
         //asignando el Adapter al RecyclerView
         recyclerMyCartProducts.adapter = mAdapter
-        //obteniendo el precio total
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -84,8 +103,35 @@ class MyCartFragment : Fragment() {
     }
     //Agregar el menú de opciones al AppBar
     override fun onCreateOptionsMenu(menu: Menu, menuInflater: MenuInflater){
-        menuInflater.inflate(R.menu.toolbar_menu, menu)
+        menuInflater.inflate(R.menu.toolbar_menu_mycart, menu)
         return super.onCreateOptionsMenu(menu,menuInflater)
+    }
+
+    //asignamos las acciones para cada opción del AppBar
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        var msg = ""
+
+        when(item.itemId){
+            R.id.deleteAll -> {
+                val builder = AlertDialog.Builder(requireActivity())
+                builder.setTitle("Deleting Products")
+                builder.setMessage("Do you want to delete all products?")
+                builder.setPositiveButton("Yes", { dialogInterface: DialogInterface, i: Int ->
+                    deleteProducts()
+                    // Cerrando Sesión
+                    val progressDialog = ProgressDialog(requireActivity())
+                    progressDialog.setMessage("Deleting Products...")
+                    progressDialog.setCancelable(false)
+                    progressDialog.show()
+                    Handler().postDelayed({progressDialog.dismiss()},1500)
+                })
+                builder.setNegativeButton("No", { dialogInterface: DialogInterface, i: Int -> })
+                builder.show()
+            }
+
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 
     private fun loadFragment(fragment: Fragment) {

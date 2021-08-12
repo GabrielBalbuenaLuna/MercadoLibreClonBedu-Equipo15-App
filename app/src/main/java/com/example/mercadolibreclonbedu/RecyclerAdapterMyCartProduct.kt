@@ -37,6 +37,7 @@ class RecyclerAdapterMyCartProduct(
         val favoriteItemPrice = view.findViewById(R.id.cardMyCartPrice) as TextView
         val favoriteItemImage = view.findViewById(R.id.cardMyCartImage) as ImageView
         val favoriteItemArrival = view.findViewById(R.id.cardMyCartDelivery) as TextView
+        val buttonDelete = view.findViewById(R.id.buttonDelete) as TextView
 
         //"atando" los datos a las Views
         fun bind(product: Product, context: Context){
@@ -45,7 +46,7 @@ class RecyclerAdapterMyCartProduct(
                 favoriteItemArrival.visibility = View.INVISIBLE
                 favoriteItemImage.visibility = View.INVISIBLE
                 favoriteItemPrice.visibility = View.INVISIBLE
-
+                buttonDelete.visibility = View.INVISIBLE
             }
             favoriteItemName.text = product.name
             favoriteItemPrice.text = product.price

@@ -10,6 +10,9 @@
     <string name="password">Contraseña</string>
     <string name="signup">Registrate</string>
     <string name="loginhere"><u>¿Ya tienes una cuenta? Inicia sesión aquí</u></string>
+    <!-- MyCart -->
+    <string name="deleteProduct">Delete</string>
+
     <!-- MyAccount -->
     <string name="nombre_usuario">Hello User!</string>
     <string name="level">Level 2</string>
@@ -62,6 +65,8 @@
     <string name="addToShoppingCard">Add to Shopping Cart</string>
     <string name="alert">Alerts Enabled/Disabled</string>
     <string name="settings">Settings</string>
+    <string name="deleteAll">Delete All Products</string>
+    <string name="logout">Log Out</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="homeHeader">Shop</string>

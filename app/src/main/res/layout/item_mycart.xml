@@ -68,7 +68,19 @@
                 android:drawablePadding="8dp"
                 />
 
-
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="96dp"
+                android:layout_height="32dp"
+                android:drawableLeft="@drawable/ic_baseline_delete_16"
+                app:layout_constraintLeft_toRightOf="@id/cardMyCartDescription"
+                app:layout_constraintTop_toBottomOf="@+id/cardMyCartDescription"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="@string/deleteProduct"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="8sp"
+                android:backgroundTint="@color/red"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
