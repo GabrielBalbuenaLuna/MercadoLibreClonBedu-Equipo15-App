@@ -3,16 +3,18 @@ package com.example.mercadolibreclonbedu
 import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_favorites.*
-import kotlinx.android.synthetic.main.fragment_home.view.*
+import kotlinx.android.synthetic.main.fragment_favorites.view.*
+import kotlinx.android.synthetic.main.fragment_my_cart.*
 import kotlinx.android.synthetic.main.fragment_my_cart.view.*
 import java.lang.NullPointerException
 
 class MyCartFragment : Fragment() {
-    private lateinit var mAdapter : RecyclerAdapterFavoriteProduct
+    private lateinit var mAdapter : RecyclerAdapterMyCartProduct
     private var listener : (Product) ->Unit = {}
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,12 +27,18 @@ class MyCartFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_my_cart, container, false)
+        val buttonComprar = view.findViewById<AppCompatButton>(R.id.buttonComprarAhora)
 
         // seteando el appbar como action bar
         (activity as AppCompatActivity).setSupportActionBar(view.myCart_bar)
         val toolbar: Toolbar = view.findViewById(R.id.myCart_bar) as Toolbar
         toolbar.setTitle("") //Ocultar el titulo por defecto
 
+        buttonComprar.setOnClickListener {
+            loadFragment(Pagar())
+        }
+
+        // infla el layout para este Fragment
         return view
     }
 
@@ -44,7 +52,7 @@ class MyCartFragment : Fragment() {
             productList.add(product!!)
 //            productList.add(Product("Wish List Empty", "", 0f, 0, 0, arrayListOf(), arrayListOf()))
         } catch (Exception: NullPointerException) {
-            productList.add(Product("Wish List Empty", "", 0f, 0, 0, arrayListOf(), arrayListOf()))
+            productList.add(Product("My Cart List Is Empty", "", 0f, 0, 0, arrayListOf(), arrayListOf()))
         }
         return productList
     }
@@ -52,13 +60,13 @@ class MyCartFragment : Fragment() {
     //configuramos lo necesario para desplegar el RecyclerView
     private fun setUpRecyclerView(){
         // indicamos que tiene un tamaño fijo
-        recyclerFavoriteProducts.setHasFixedSize(true)
+        recyclerMyCartProducts.setHasFixedSize(true)
         // indicamos el tipo de layoutManager
-        recyclerFavoriteProducts.layoutManager = LinearLayoutManager(activity)
+        recyclerMyCartProducts.layoutManager = LinearLayoutManager(activity)
         //seteando el Adapter
-        mAdapter = RecyclerAdapterFavoriteProduct( requireActivity(), getProducts(), listener)
+        mAdapter = RecyclerAdapterMyCartProduct( requireActivity(), getProducts(), listener)
         //asignando el Adapter al RecyclerView
-        recyclerFavoriteProducts.adapter = mAdapter
+        recyclerMyCartProducts.adapter = mAdapter
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -69,10 +77,18 @@ class MyCartFragment : Fragment() {
     fun setListener(l: (Product) ->Unit){
         listener = l
     }
-
     //Agregar el menú de opciones al AppBar
     override fun onCreateOptionsMenu(menu: Menu, menuInflater: MenuInflater){
         menuInflater.inflate(R.menu.toolbar_menu, menu)
         return super.onCreateOptionsMenu(menu,menuInflater)
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        val transaction = parentFragmentManager
+            .beginTransaction()
+            .replace(R.id.frame_container, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+
     }
 }

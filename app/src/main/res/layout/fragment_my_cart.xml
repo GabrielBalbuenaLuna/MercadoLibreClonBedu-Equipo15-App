@@ -33,7 +33,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerFavoriteProducts"
+        android:id="@+id/recyclerMyCartProducts"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             android:textSize="24sp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/misComprasButton"
+            android:id="@+id/buttonComprarAhora"
             android:layout_below="@+id/textoTotal"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
