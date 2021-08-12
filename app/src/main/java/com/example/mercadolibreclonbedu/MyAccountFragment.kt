@@ -20,7 +20,7 @@ class MyAccountFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_my_account, container, false)
-        val buttonCompras = view.findViewById<AppCompatButton>(R.id.buttonCompras)
+        val buttonCompras = view.findViewById<AppCompatButton>(R.id.buttonMisCompras)
 
         // seteando el appbar como action bar
         (activity as AppCompatActivity).setSupportActionBar(view.myAccount_bar)
