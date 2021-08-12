@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">Bedu Store</string>
     <!-- LogIn and Register -->
-    <string name="login">Acceder</string>
-    <string name="signuphere"><u>¿No tienes cuenta? Registrate aquí</u></string>
-    <string name="loginButton">Entrar</string>
-    <string name="fullname">Nombre Completo</string>
-    <string name="email">Correo Eléctronico</string>
-    <string name="username">Nombre de Usuario</string>
-    <string name="password">Contraseña</string>
-    <string name="signup">Registrate</string>
-    <string name="loginhere"><u>¿Ya tienes una cuenta? Inicia sesión aquí</u></string>
+    <string name="login">LogIn</string>
+    <string name="signuphere">Dont have account? Click here</string>
+    <string name="loginButton">LOGIN</string>
+    <string name="fullname">Fullname</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signup">Register</string>
+    <string name="loginhere">Alredy have an account? Click here</string>
     <!-- MyCart -->
     <string name="deleteProduct">Delete</string>
 
