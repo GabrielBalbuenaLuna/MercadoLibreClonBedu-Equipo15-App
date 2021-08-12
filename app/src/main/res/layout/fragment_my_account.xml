@@ -58,7 +58,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nivel 2"
+            android:text="@string/level"
             android:textSize="14sp"
             android:textColor="#DADDE1"
             android:fontFamily="@font/poppinsmedium"
@@ -97,7 +97,7 @@
                     android:id="@+id/buy_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8"
+                    android:text="@string/number_purchases"
                     android:textSize="20sp"
                     android:textColor="@color/white"
                     android:includeFontPadding="false"
@@ -113,7 +113,7 @@
                     android:layout_marginTop="-5dp"
                     android:fontFamily="@font/poppinsbold"
                     android:includeFontPadding="false"
-                    android:text="Compras"
+                    android:text="@string/purchases"
                     android:textColor="@color/textLight"
                     android:textSize="14sp" />
 
@@ -142,7 +142,7 @@
                     android:id="@+id/cupon_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3"
+                    android:text="@string/number_points"
                     android:textSize="20sp"
                     android:textColor="@color/white"
                     android:includeFontPadding="false"
@@ -158,7 +158,7 @@
                     android:layout_marginTop="-5dp"
                     android:fontFamily="@font/poppinsbold"
                     android:includeFontPadding="false"
-                    android:text="Cupones"
+                    android:text="@string/points"
                     android:textColor="@color/textLight"
                     android:textSize="14sp" />
 
@@ -176,7 +176,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Fullname"
+            android:hint="@string/Fullname"
             android:layout_marginBottom="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -184,7 +184,7 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_person"
                 android:drawablePadding="20dp"
-                android:text="Mateo Kovacic"
+                android:text="@string/name"
                 android:background="@color/white"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -192,7 +192,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Telefono"
+            android:hint="@string/cellphone"
             android:layout_marginBottom="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -208,7 +208,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email"
             android:layout_marginBottom="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -216,7 +216,7 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_email"
                 android:drawablePadding="20dp"
-                android:text="mateo@gmail.com"
+                android:text="@string/mail"
                 android:background="@color/white"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -225,7 +225,7 @@
             android:id="@+id/buttonMisCompras"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mis compras"
+            android:text="@string/myPurchases"
             android:fontFamily="@font/poppinsbold"
             android:backgroundTint="@color/buttonColorPrimary"/>
 
