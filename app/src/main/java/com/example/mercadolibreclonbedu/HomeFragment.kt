@@ -49,9 +49,17 @@ class HomeFragment : Fragment() {
             val imageList3 = arrayListOf<String>("https://ss237.liverpool.com.mx/xl/1091077815.jpg", "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/d285610e30664900b857a7fa00ed0201_9366/Tenis_Superstar_Blanco_C77124_01_standard.jpg", "https://www.dpstreet.mx/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1019110-0100V1.jpg")
             val sizesList3 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
 
+            val imageList4 = arrayListOf<String>("https://http2.mlstatic.com/D_NQ_NP_937478-MLM31220133230_062019-O.jpg", "https://ss357.liverpool.com.mx/xl/1068658566.jpg", "https://cdn.shopify.com/s/files/1/0071/3850/8859/products/805289305026_1600x1067.png?v=1539209159")
+            val sizesList4 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
+
+            val imageList5 = arrayListOf<String>("https://allinoutfits.com/wp-content/uploads/Outfit-pantalon-beige-con-bolsillos-hombre.jpg", "https://i.pinimg.com/originals/48/a0/b0/48a0b0d03f401eabdb24b88b5158e4ec.jpg", "https://images-na.ssl-images-amazon.com/images/I/516Q7qJOisL._AC_UX342_.jpg")
+            val sizesList5 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
+
             listProducts.add(Product("Men blue elegant shoes", "$450", 5f, 5, R.drawable.blue_shoes, imageList, sizesList))
             listProducts.add(Product("Men's jacket red and black", "$345",2.5f, 20, R.drawable.jacket, imageList2, sizesList2))
             listProducts.add(Product("Black men's casual sneakers", "$250",3.5f, 7, R.drawable.sneakers, imageList3, sizesList3))
+            listProducts.add(Product("Brown Sunglasses", "$450",2.9f, 12, R.drawable.sunglasses_men, imageList4, sizesList4))
+            listProducts.add(Product("Beige men pants", "$250",3.5f, 7, R.drawable.beige_pants, imageList5, sizesList5))
             val intent = Intent(activity, MainProductList::class.java)
             bundle.putParcelableArrayList("LISTA", listProducts)
             intent.putExtras(bundle)
@@ -70,9 +78,17 @@ class HomeFragment : Fragment() {
             val imageList3 = arrayListOf<String>("https://http2.mlstatic.com/D_NQ_NP_942200-MLM46405114353_062021-W.jpg", "https://i.pinimg.com/originals/85/f1/7f/85f17f3c0f68e7d1788576bf3e91456b.jpg", "https://ss550.liverpool.com.mx/xl/1073562589_3p.jpg")
             val sizesList3 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
 
+            val imageList4 = arrayListOf<String>("https://m.media-amazon.com/images/I/41IvBQH05BL._AC_UX342_.jpg", "https://images-na.ssl-images-amazon.com/images/I/41aocdM9AWL._AC_UX466_.jpg", "https://m.media-amazon.com/images/I/41C5MKsUPeL._AC_.jpg")
+            val sizesList4 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
+
+            val imageList5 = arrayListOf<String>("https://m.media-amazon.com/images/I/717qbfjfQcL._AC_UX385_.jpg", "https://m.media-amazon.com/images/I/71Mfm14UVhL._AC_UX342_.jpg", "")
+            val sizesList5 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
+
             listProducts.add(Product("Lady pink skirt", "$150",4.5f, 6, R.drawable.skirt, imageList, sizesList))
             listProducts.add(Product("Weties pink female bag", "$1200",4.6f, 30, R.drawable.pink_bag, imageList2, sizesList2))
             listProducts.add(Product("Purple high heels", "$450",5f, 3, R.drawable.purple_highheels, imageList3, sizesList3))
+            listProducts.add(Product("Dress blim women", "$750",3.3f, 10, R.drawable.blim_dress, imageList4, sizesList4))
+            listProducts.add(Product("Red women blouse", "$350",1.5f, 15, R.drawable.red_blouse, imageList5, sizesList5))
             val intent = Intent(activity, MainProductList::class.java)
             bundle.putParcelableArrayList("LISTA", listProducts)
             intent.putExtras(bundle)
@@ -91,9 +107,22 @@ class HomeFragment : Fragment() {
             val imageList3 = arrayListOf<String>("https://m.media-amazon.com/images/I/51xNql1VPDL._AC_SX425_.jpg", "https://resources.claroshop.com/medios-plazavip/mkt/5f234dedb9314_poncho6jpg.jpg", "https://sc04.alicdn.com/kf/HTB1v2PfXynrK1RjSsziq6xptpXaZ.jpg")
             val sizesList3 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
 
+            val imageList4 = arrayListOf<String>("https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2934154.jpg", "https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2934155.jpg", "https://http2.mlstatic.com/D_NQ_NP_812889-MLM46234475547_062021-W.jpg")
+            val sizesList4 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
+
+            val imageList5 = arrayListOf<String>("https://http2.mlstatic.com/D_NQ_NP_677508-MLM32786845669_112019-O.jpg", "https://gameplanet-53f8.kxcdn.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/g/o/gorra-clasica-pikachu.jpg", "https://m.media-amazon.com/images/I/61tkSntxW-L._AC_SL1000_.jpg")
+            val sizesList5 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
+
+            val imageList6 = arrayListOf<String>("https://cdn1.coppel.com/images/catalog/pr/7060082-1.jpg", "https://http2.mlstatic.com/D_NQ_NP_958554-MLM28676975403_112018-O.jpg", "https://images-na.ssl-images-amazon.com/images/I/71LlVcSbxaL._AC_SY550_.jpg")
+            val sizesList6 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
+
             listProducts.add(Product("Cocodrile's kid sandals", "$130",4.7f, 20, R.drawable.cocodrile_shoes, imageList, sizesList))
             listProducts.add(Product("Monsters inc pajamas", "$265",3.5f, 35, R.drawable.monster_inc, imageList2, sizesList2))
             listProducts.add(Product("Waterproof children jacket", "$120",4.5f, 4, R.drawable.waterproof_jacket, imageList3, sizesList3))
+            listProducts.add(Product("Goody rain boots", "$150",3.5f, 10, R.drawable.boots_kid, imageList4, sizesList4))
+            listProducts.add(Product("Pikachu cap", "$320",4.5f,20,  R.drawable.pikachu, imageList5, sizesList5))
+            listProducts.add(Product("Cars bagpack", "$120",4.5f, 4, R.drawable.cars_bag, imageList6, sizesList6))
+
             val intent = Intent(activity, MainProductList::class.java)
             bundle.putParcelableArrayList("LISTA", listProducts)
             intent.putExtras(bundle)

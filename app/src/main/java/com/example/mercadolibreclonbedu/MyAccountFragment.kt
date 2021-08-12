@@ -1,7 +1,13 @@
 package com.example.mercadolibreclonbedu
 
+import android.app.Activity
+import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.Toolbar
@@ -28,7 +34,7 @@ class MyAccountFragment : Fragment() {
         toolbar.setTitle("") //Ocultar el titulo por defecto
 
         buttonCompras.setOnClickListener {
-            loadFragment(MyCartFragment())
+            loadFragment(MisComprasFragment())
         }
         return view
     }
@@ -37,6 +43,28 @@ class MyAccountFragment : Fragment() {
     override fun onCreateOptionsMenu(menu: Menu, menuInflater: MenuInflater){
         menuInflater.inflate(R.menu.toolbar_menu_myaccount, menu)
         return super.onCreateOptionsMenu(menu,menuInflater)
+    }
+
+    //asignamos las acciones para cada opción del AppBar
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        var msg = ""
+
+        when(item.itemId){
+            R.id.myAccountSettings -> {
+                val builder = AlertDialog.Builder(requireActivity())
+                builder.setTitle("Sign out from this device")
+                builder.setMessage("Are you sure to log out?")
+                builder.setPositiveButton("Yes", { dialogInterface: DialogInterface, i: Int ->
+                    val intent = Intent(activity, LogIn::class.java)
+                    startActivity(intent)
+                })
+                builder.setNegativeButton("No", { dialogInterface: DialogInterface, i: Int -> })
+                builder.show()
+            }
+
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 
     private fun loadFragment(fragment: Fragment) {

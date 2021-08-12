@@ -1,5 +1,30 @@
 <resources>
     <string name="app_name">Bedu Store</string>
+    <!-- LogIn and Register -->
+    <string name="login">Acceder</string>
+    <string name="signuphere">¿No tienes cuenta? Registrate aquí</string>
+    <string name="loginButton">Entrar</string>
+    <string name="fullname">Nombre Completo</string>
+    <string name="email">Correo Eléctronico</string>
+    <string name="username">Nombre de Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="signup">Registrate</string>
+    <string name="loginhere">Inicia sesión aquí</string>
+    <!-- MyAccount -->
+    <string name="nombre_usuario">Hello User!</string>
+    <string name="level">Level 2</string>
+    <string name="number_purchases">8</string>
+    <string name="purchases">Purchases</string>
+    <string name="number_points">42,6</string>
+    <string name="points">Points</string>
+    <string name="Fullname">Full Name</string>
+    <string name="name">Mateo Kovacic</string>
+    <string name="cellphone">Cell Phone</string>
+    <string name="cel">5582050</string>
+    <string name="mail">mateo@gmail.com</string>
+    <string name="myPurchases">My Purchases</string>
+
+
     <string name="mis_compras">Mis Compras</string>
     <string name="categorias">Categorias</string>
     <string name="pagar">¿Como quieres pagar?</string>
@@ -10,21 +35,15 @@
     <string name="con_mercado_pago">Con Mercado Pago</string>
     <string name="con_otras_formas_pago">Con otras formas de pago</string>
     <string name="ej_list_item_tarjeta_credito">Ejemplo Tarjeta de Credito</string>
-    <string name="nombre_usuario">¡Hola Usuario!</string>
+
     <string name="nombre">Nombre y Apellidos</string>
     <string name="celular">55 5555 5555</string>
     <string name="correo">usuario@gmail.com</string>
     <string name="direccion">dirección</string>
     <string name="precio_total">$ 330.00</string>
-    <string name="signup">Registrate</string>
-    <string name="fullname">Nombre Completo</string>
-    <string name="email">Correo Eléctronico</string>
-    <string name="username">Nombre de Usuario</string>
-    <string name="password">Contraseña</string>
-    <string name="loginhere">Inicia sesión aquí</string>
-    <string name="login">Acceder</string>
-    <string name="signuphere">¿No tienes cuenta? Registrate aquí</string>
-    <string name="loginButton">Entrar</string>
+
+
+
     <string name="quantityProduct">Quantity:</string>
     <string name="minusQuantity">-</string>
     <string name="plusQuantity">+</string>
@@ -35,6 +54,7 @@
     <string name="buyNow">Buy now</string>
     <string name="addToCart">Add to cart</string>
     <string name="addToFavorites">Add to favorites</string>
+    <!-- AppBar -->
     <string name="shopHeader">Home</string>
     <string name="favoritesHeader">Favorites</string>
     <string name="myCartHeader">My Cart</string>
