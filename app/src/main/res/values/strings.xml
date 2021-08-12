@@ -48,4 +48,6 @@
     <string name="men">Men</string>
     <string name="women">Women</string>
     <string name="kids">Kids</string>
+    <string name="trending">TRENDING</string>
+    <string name="promotion">Products with irresistible end-of-season prices</string>
 </resources>
