@@ -60,21 +60,20 @@
         android:id="@+id/categoriesSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headerHomeMenu"
         android:paddingVertical="24dp"
         >
         <LinearLayout
             android:id="@+id/menSection"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/womenSection"
-            >
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnMen"
                 android:layout_width="88dp"
@@ -85,67 +84,64 @@
                 app:icon="@drawable/ic_baseline_star_48"
                 app:iconGravity="textStart"
                 app:iconPadding="10dp"
-                app:strokeColor="@color/blackColor"
-                app:strokeWidth="3dp"
                 app:iconTint="@color/darkYellow"
-                />
+                app:strokeColor="@color/blackColor"
+                app:strokeWidth="3dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/men"
-                android:textSize="24sp"
-                android:textColor="@color/blackColor"
                 android:layout_gravity="center"
-                />
+                android:text="@string/men"
+                android:textColor="@color/blackColor"
+                android:textSize="24sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/womenSection"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@id/menSection"
-            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/kidsSection"
-            >
+            app:layout_constraintStart_toEndOf="@id/menSection"
+            app:layout_constraintTop_toTopOf="parent">
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnWomen"
                 android:layout_width="88dp"
                 android:layout_height="88dp"
+                android:layout_gravity="center"
                 android:gravity="center"
                 android:textAllCaps="true"
                 app:backgroundTint="@color/lightOrange"
                 app:icon="@drawable/ic_baseline_star_48"
                 app:iconGravity="textStart"
                 app:iconPadding="10dp"
-                app:strokeColor="@color/blackColor"
-                app:strokeWidth="3dp"
                 app:iconTint="@color/darkOrange"
-                android:layout_gravity="center"
-                />
+                app:strokeColor="@color/blackColor"
+                app:strokeWidth="3dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/women"
-                android:textSize="24sp"
                 android:textColor="@color/blackColor"
-                />
+                android:textSize="24sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/kidsSection"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@id/womenSection"
-            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            >
+            app:layout_constraintStart_toEndOf="@id/womenSection"
+            app:layout_constraintTop_toTopOf="parent">
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnKids"
                 android:layout_width="88dp"
@@ -156,23 +152,19 @@
                 app:icon="@drawable/ic_baseline_star_48"
                 app:iconGravity="textStart"
                 app:iconPadding="10dp"
-                app:strokeColor="@color/blackColor"
-                app:strokeWidth="3dp"
                 app:iconTint="@color/darkGreen"
-                />
+                app:strokeColor="@color/blackColor"
+                app:strokeWidth="3dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/kids"
-                android:textSize="24sp"
-                android:textColor="@color/blackColor"
                 android:layout_gravity="center"
-                />
+                android:text="@string/kids"
+                android:textColor="@color/blackColor"
+                android:textSize="24sp" />
 
         </LinearLayout>
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
