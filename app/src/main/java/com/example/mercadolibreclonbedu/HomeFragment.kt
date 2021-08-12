@@ -110,10 +110,10 @@ class HomeFragment : Fragment() {
             val imageList4 = arrayListOf<String>("https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2934154.jpg", "https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2934155.jpg", "https://http2.mlstatic.com/D_NQ_NP_812889-MLM46234475547_062021-W.jpg")
             val sizesList4 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
 
-            val imageList5 = arrayListOf<String>("https://http2.mlstatic.com/D_NQ_NP_677508-MLM32786845669_112019-O.jpg", "https://gameplanet-53f8.kxcdn.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/g/o/gorra-clasica-pikachu.jpg", "https://m.media-amazon.com/images/I/71TeMI9iaPL._AC_SS450_.jpg")
+            val imageList5 = arrayListOf<String>("https://http2.mlstatic.com/D_NQ_NP_677508-MLM32786845669_112019-O.jpg", "https://gameplanet-53f8.kxcdn.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/g/o/gorra-clasica-pikachu.jpg", "https://m.media-amazon.com/images/I/61tkSntxW-L._AC_SL1000_.jpg")
             val sizesList5 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
 
-            val imageList6 = arrayListOf<String>("https://cdn1.coppel.com/images/catalog/pr/7060082-1.jpg", "https://http2.mlstatic.com/D_NQ_NP_958554-MLM28676975403_112018-O.jpg", "")
+            val imageList6 = arrayListOf<String>("https://cdn1.coppel.com/images/catalog/pr/7060082-1.jpg", "https://http2.mlstatic.com/D_NQ_NP_958554-MLM28676975403_112018-O.jpg", "https://images-na.ssl-images-amazon.com/images/I/71LlVcSbxaL._AC_SY550_.jpg")
             val sizesList6 = arrayListOf<String>("Height: 30 cm, Width: 20 cm, Heel: 5 cm", "Height: 32 cm, Width: 22 cm, Heel: 5 cm", "Height: 34 cm, Width: 24 cm, Heel: 5 cm")
 
             listProducts.add(Product("Cocodrile's kid sandals", "$130",4.7f, 20, R.drawable.cocodrile_shoes, imageList, sizesList))
