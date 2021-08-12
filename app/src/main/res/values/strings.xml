@@ -2,14 +2,14 @@
     <string name="app_name">Bedu Store</string>
     <!-- LogIn and Register -->
     <string name="login">Acceder</string>
-    <string name="signuphere">¿No tienes cuenta? Registrate aquí</string>
+    <string name="signuphere"><u>¿No tienes cuenta? Registrate aquí</u></string>
     <string name="loginButton">Entrar</string>
     <string name="fullname">Nombre Completo</string>
     <string name="email">Correo Eléctronico</string>
     <string name="username">Nombre de Usuario</string>
     <string name="password">Contraseña</string>
     <string name="signup">Registrate</string>
-    <string name="loginhere">Inicia sesión aquí</string>
+    <string name="loginhere"><u>¿Ya tienes una cuenta? Inicia sesión aquí</u></string>
     <!-- MyAccount -->
     <string name="nombre_usuario">Hello User!</string>
     <string name="level">Level 2</string>
