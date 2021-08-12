@@ -1,29 +1,42 @@
 package com.example.mercadolibreclonbedu
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
+import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import com.google.android.material.button.MaterialButton
 import kotlinx.android.synthetic.main.activity_my_account.*
+import kotlinx.android.synthetic.main.fragment_my_account.view.*
 
 class MyAccountFragment : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_my_account, container, false)
-        val buttonCompras = view.findViewById<AppCompatButton>(R.id.buttonCompras)
+        val buttonCompras = view.findViewById<AppCompatButton>(R.id.buttonMisCompras)
+
+        // seteando el appbar como action bar
+        (activity as AppCompatActivity).setSupportActionBar(view.myAccount_bar)
+        val toolbar: Toolbar = view.findViewById(R.id.myAccount_bar) as Toolbar
+        toolbar.setTitle("") //Ocultar el titulo por defecto
 
         buttonCompras.setOnClickListener {
             loadFragment(MyCartFragment())
         }
         return view
+    }
+
+    //Agregar el menú de opciones al AppBar
+    override fun onCreateOptionsMenu(menu: Menu, menuInflater: MenuInflater){
+        menuInflater.inflate(R.menu.toolbar_menu_myaccount, menu)
+        return super.onCreateOptionsMenu(menu,menuInflater)
     }
 
     private fun loadFragment(fragment: Fragment) {

@@ -16,6 +16,7 @@
     <color name="lightBlue">#2291FF</color>
     <color name="colorAccent">#0E3746</color>
     <color name="colorPrimary">#2291FF</color>
+    <color name="colorPrimaryDark">#2291FF</color>
     <color name="colorSecondary">#00C6AE</color>
     <color name="buttonColorPrimary">#0E3746</color>
     <color name="lightYellow">#FFF4CC</color>
