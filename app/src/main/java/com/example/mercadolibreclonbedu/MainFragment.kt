@@ -34,6 +34,7 @@ class MainFragment : Fragment(){
                 R.id.secondFragment -> { loadFragment(FavoritesListFragment()) }
                 R.id.thirdFragment -> { loadFragment(MyCartFragment()) }
                 R.id.fourthFragment -> { loadFragment(MyAccountFragment()) }
+                //R.id.fourthFragment -> { loadFragment((MisComprasFragment())) }
             }
             true
         }
