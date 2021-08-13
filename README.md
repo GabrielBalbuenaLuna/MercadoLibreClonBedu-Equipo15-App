@@ -26,7 +26,7 @@ Una vez cargada la aplicacion, se le pedirá al usuario que Inicie Sesión con s
 La vista anterior te da la opción de registrarte pero debido a que no se cuenta con una base de datos para guardar el registro de usuarios por el momento no va a ser posible que un usuario quede registrado en la aplicacion,
 ests vista se ve algo asi:
 <p align="center">
-  <img src="./app/src/assetsRegisterView.PNG" width="200" title="hover text">
+  <img src="./app/src/assets/RegisterView.PNG" width="200" title="hover text">
 </p>
 
 En esta vista podrás insertar datos relevantes que seran necesarios para recabar todos los datos mas importantes de los usuarios, como nombre completo, correo electronico, nombre de usuario y contraseña.
@@ -52,7 +52,7 @@ Menu Mujeres
 
 Menu Niños
 <p align="center">
-  <img src="./app/src/assets/KidsListProducts.png" width="200" title="hover text">
+  <img src="./app/src/assets/KidsListProducts.PNG" width="200" title="hover text">
 </p>
 
 Desde cualquiera de las listas de productos de cada una de las categorias existen dos opciones, una es dar click directamente en el icono del corazon, acción que llevará al usuario a la pantalla de Favoritos
@@ -71,21 +71,21 @@ Una vez añadido el producto en la vista de favoritos, el articulo se verá algo
 Regresando a la vista de articulos, si se le da click directamente al producto, llevará al usuario a una pantalla donde se mostraran los detalles del articulo, se mostrará información como fotografias del articulo, calificación,
 descripción, costo, se podrá seleccionar la cantidad, se podrán visualizar las especificaciones de las tallas, asi como la visualización de un estimado de dias para la entrega del producto en cuestion.
 <p align="center">
-  <img src="./app/src/assets/ProductDetail1.png" width="200" title="hover text">
+  <img src="./app/src/assets/ProductDetail1.PNG" width="200" title="hover text">
 </p>
 
 <p align="center">
-  <img src="./app/src/assets/ProductDetail2.png" width="200" title="hover text">
+  <img src="./app/src/assets/ProductDetail2.PNG" width="200" title="hover text">
 </p>
 
 Para navegar a traves de la pagina no solo se puede hacer mediante botones que te lleven de un lado a otro en lugares especificos de la app, se cuenta con un menu de navegación entre las vistas mas importantes de la aplicación, entre ellas están las pantallas de home y favoritos, que ya se han mencionado anteriormente, asi como las vistas de mi carrito
 y mi cuenta.
 <p align="center">
-  <img src="./app/src/assets/NavigationMenu.png" width="200" title="hover text">
+  <img src="./app/src/assets/NavigationMenu.PNG" width="200" title="hover text">
 </p>
 En la pantalla de mi carrito, el usuario podrá encontrar de manera directa los articulos que haya cargado a este para poder realizar su compra posteriormente. Esta pantalla se muestra a continuación:
 <p align="center">
-  <img src="./app/src/assets/MyCartView.png" width="200" title="hover text">
+  <img src="./app/src/assets/MyCartView.PNG" width="200" title="hover text">
 </p>
 
 Desde esta pantalla se pueden realizar algunas acciones tales como borrar los articulos añadidos:
@@ -94,32 +94,32 @@ Desde esta pantalla se pueden realizar algunas acciones tales como borrar los ar
 </p>
 
 <p align="center">
-  <img src="./app/src/assets/CartItemsEmpty.png" width="200" title="hover text">
+  <img src="./app/src/assets/CartItemsEmpty.PNG" width="200" title="hover text">
 </p>
 
 Tambien desde la vista de mi carrito se puede iniciar un proceso de pago y este se veria tal y como se muestra a continuación:
 <p align="center">
-  <img src="./app/src/assets/BuyNow.png" width="200" title="hover text">
+  <img src="./app/src/assets/BuyNow.PNG" width="200" title="hover text">
 </p>
 A continuación se muestra otra de las pantallas principales de la aplicación. Esta es la pantalla de Mi cuenta, en esta se muestra la información del usuario,
 como su nombre, telefono celular, fotografia y correo electronico, ademas su informacion en base a la interaccion que ha tenido con la app, tal como cupones o total de compras.
 Esta vista se ve algo asi:
 <p align="center">
-  <img src="./app/src/assets/MyAccountView.png" width="200" title="hover text">
+  <img src="./app/src/assets/MyAccountView.PNG" width="200" title="hover text">
 </p>
 A partir de la pantalla anterior, al dar click a la vista de mis compras, se mostrará el historial de las compras realizadas por el usuario desde que se registro a la app:
 <p align="center">
-  <img src="./app/src/assets/MyPurchases.png" width="200" title="hover text">
+  <img src="./app/src/assets/MyPurchases.PNG" width="200" title="hover text">
 </p>
 Si regresamos a la vista de Mi cuenta, existe otra opcion, que es la de cerrar sesion, una vez dada la confirmación del usuario, la aplicacion volverá a mostrar la pantalla de iniciar seseión,
 para que vuelvan a ser insertadas las credenciales por el usuario y el proceso regresa a donde empezó...
 <p align="center">
-  <img src="./app/src/assets/LogOut.png" width="200" title="hover text">
+  <img src="./app/src/assets/LogOut.PNG" width="200" title="hover text">
 </p>
 
 Para estilizar la aplicacion y mejorar la experiencia de usuario se agregaron algunos loaders y spinners, para simular la carga de datos de la consulta de un backend real. Aqui se muestran algunos ejemplos:
 <p align="center">
-  <img src="./app/src/assets/Loader.png" width="200" title="hover text">
+  <img src="./app/src/assets/LoaderExample.png" width="200" title="hover text">
 </p>
 
 
