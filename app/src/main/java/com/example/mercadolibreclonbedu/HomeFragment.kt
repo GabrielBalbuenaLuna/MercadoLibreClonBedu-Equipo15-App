@@ -31,11 +31,11 @@ class HomeFragment : Fragment() {
         btnMen = view.findViewById(R.id.btnMen)
         btnWomen = view.findViewById(R.id.btnWomen)
         btnKids = view.findViewById(R.id.btnKids)
-//
-//        // seteando el appbar como action bar
-//        (activity as AppCompatActivity).setSupportActionBar(view.shop_bar)
-//        val toolbar: Toolbar = view.findViewById(R.id.shop_bar) as Toolbar
-//        toolbar.setTitle("") //Ocultar el titulo por defecto
+
+        // seteando el appbar como action bar
+        (activity as AppCompatActivity).setSupportActionBar(view.shop_bar)
+        val toolbar: Toolbar = view.findViewById(R.id.shop_bar) as Toolbar
+        toolbar.setTitle("") //Ocultar el titulo por defecto
 
         btnMen.setOnClickListener{
             val bundle = Bundle()

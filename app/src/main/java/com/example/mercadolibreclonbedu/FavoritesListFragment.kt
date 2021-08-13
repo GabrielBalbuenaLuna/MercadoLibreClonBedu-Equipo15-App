@@ -31,10 +31,10 @@ class FavoritesListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_favorites, container, false)
-//        // seteando el appbar como action bar
-//        (activity as AppCompatActivity).setSupportActionBar(view.favorites_bar)
-//        val toolbar: Toolbar = view.findViewById(R.id.favorites_bar) as Toolbar
-//        toolbar.setTitle("") //Ocultar el titulo por defecto
+        // seteando el appbar como action bar
+        (activity as AppCompatActivity).setSupportActionBar(view.favorites_bar)
+        val toolbar: Toolbar = view.findViewById(R.id.favorites_bar) as Toolbar
+        toolbar.setTitle("") //Ocultar el titulo por defecto
         // infla el layout para este Fragment
         return view
     }
