@@ -10,7 +10,7 @@ explorar la pagina, añadir al carrito, añadir a favoritos, iniciar un proceso 
 
 Al instalar la aplicacion en tu dispositivo movil, esta se veria algo asi entre las demas aplicaciones del mismo con un color azul y como logo un carrito de supermercado:
 <p align="center">
-  <img src="./app/src/assets/LogoMobile.png" width="200" title="hover text">
+  <img src="./app/src/assets/LogoApp.png" width="200" title="hover text">
 </p>
 
 Al ejecutar la aplicacion por primera vez, es decir, cuando comienza el ciclo de vida de la aplicacion esta se veria con una pantalla algo asi
@@ -40,17 +40,17 @@ que se dividen en hombres, mujeres y niños, hay una slider del publico al que v
 
 Desde esa vista, al dar click a cualquiera de las categorias se mostrará un listado de productos para cada una de las categorias, a continuación se muestran cada unas de las categorias y sus productos correspondientes:
 <br>
-Menu Hombres
+###Menu Hombres
 <p align="center">
   <img src="./app/src/assets/MenListProducts.PNG" width="200" title="hover text">
 </p>
 
-Menu Mujeres
+###Menu Mujeres
 <p align="center">
   <img src="./app/src/assets/WomenListProducts.PNG" width="200" title="hover text">
 </p>
 
-Menu Niños
+###Menu Niños
 <p align="center">
   <img src="./app/src/assets/KidsListProducts.PNG" width="200" title="hover text">
 </p>
@@ -59,7 +59,7 @@ Desde cualquiera de las listas de productos de cada una de las categorias existe
 en la cual añadirá el producto en una lista donde se marcaran todos los articulos que el usuario quiera dejar fijados como productos para comprar despues, algo asi como una lista de deseos y asi el usuario no pueda
 perder de vista sus articulos favoritos para mas tarde añadirlos al carrito o bien, comprarlos.
 <p align="center">
-  <img src="./app/src/assets/FavoritesListProduct.png" width="200" title="hover text">
+  <img src="./app/src/assets/FavoriteAddItem.png" width="200" title="hover text">
 </p>
 
 Una vez añadido el producto en la vista de favoritos, el articulo se verá algo así.
@@ -119,7 +119,7 @@ para que vuelvan a ser insertadas las credenciales por el usuario y el proceso r
 
 Para estilizar la aplicacion y mejorar la experiencia de usuario se agregaron algunos loaders y spinners, para simular la carga de datos de la consulta de un backend real. Aqui se muestran algunos ejemplos:
 <p align="center">
-  <img src="./app/src/assets/LoaderExample.png" width="200" title="hover text">
+  <img src="./app/src/assets/LoaderExample.PNG" width="200" title="hover text">
 </p>
 
 
@@ -146,6 +146,8 @@ Bedu Store es desarrollada usando tecnologías como:
 - :art: **XML**: La parte de diseño se utilizó el lenguaje de marcado XML.
 
 - :gear: **Best Practices**: Flujo de trabajo sólido para mantener el código limpio y estructurado.
+
+## ¿Quienes mantienen y contribuyen a Bedu Store?
 
 ## ¿Quienes mantienen y contribuyen a Bedu Store?
 
