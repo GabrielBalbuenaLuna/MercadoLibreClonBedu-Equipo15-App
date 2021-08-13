@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/beduBar"
+        android:icon="@drawable/bell_outline"
+        android:title="@string/alert"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/beduHome"
+        android:icon="@drawable/ic_baseline_home_48"
+        android:title="@string/home"
+        app:showAsAction="always" />
+</menu>
