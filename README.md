@@ -56,17 +56,17 @@ Desde esa vista, al dar click en cualquiera de las categorias se mostrará un li
 <br>
 ### Menú Hombres
 <p align="center">
-  <img src="./app/src/assets/MenListProducts.PNG" width="200" title="hover text">
+  <img src="./app/src/assets/MenListProducts.png" width="200" title="hover text">
 </p>
 
 ### Menú Mujeres
 <p align="center">
-  <img src="./app/src/assets/WomenListProducts.PNG" width="200" title="hover text">
+  <img src="./app/src/assets/WomenListProducts.png" width="200" title="hover text">
 </p>
 
 ### Menú Niños
 <p align="center">
-  <img src="./app/src/assets/KidsListProducts.PNG" width="200" title="hover text">
+  <img src="./app/src/assets/KidsListProducts.png" width="200" title="hover text">
 </p>
 
 Desde cualquiera de las listas de productos de cada una de las categorias existen dos opciones. La primera es dar click directamente al icono del corazón, acción que llevará al usuario a la pantalla de Favoritos
@@ -132,7 +132,7 @@ para que este vuelva a insertar sus credenciales de usuario y el proceso regrese
 
 Para estilizar la aplicación y mejorar la experiencia de usuario se agregaron algunos loaders y spinners, esto para simular la carga de datos de la consulta de un backend real. Aqui se muestran un ejemplo:
 <p align="center">
-  <img src="./app/src/assets/LoaderExample.PNG" width="200" title="hover text">
+  <img src="./app/src/assets/LoaderExample.png" width="200" title="hover text">
 </p>
 
 
