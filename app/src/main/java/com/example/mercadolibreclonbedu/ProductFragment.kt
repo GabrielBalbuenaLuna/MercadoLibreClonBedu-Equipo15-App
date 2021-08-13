@@ -35,6 +35,9 @@ class ProductFragment : Fragment() {
 
     private lateinit var addItemFav: Button
 
+    private lateinit var buyButton: Button
+    private lateinit var addCartButton: Button
+
 
     private var quantityProduct = 1;
 
@@ -58,6 +61,9 @@ class ProductFragment : Fragment() {
         buttonAdd = view.findViewById(R.id.addProduct)
         buttonMinus = view.findViewById(R.id.minusProduct)
         quantityText = view.findViewById(R.id.quantityText)
+
+        buyButton = view.findViewById(R.id.buyButton)
+        addCartButton = view.findViewById(R.id.addCartButton)
 
 
         sizeSpecifications = view.findViewById(R.id.sizeSpecifications)
@@ -135,6 +141,24 @@ class ProductFragment : Fragment() {
             startActivity(intent)
         }
 
+        buyButton.setOnClickListener {
+            loadFragment(Pagar())
+        }
+
+        addCartButton.setOnClickListener {
+            loadFragment(MyCartFragment())
+        }
+
+
+
+
+    }
+    private fun loadFragment(fragment: Fragment) {
+        val transaction = parentFragmentManager
+            .beginTransaction()
+            .replace(R.id.productFr, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
 
     }
 
