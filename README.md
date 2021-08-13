@@ -1,100 +1,89 @@
 <h1> BEDU STORE </h1>
 
-## Definición del proyecto con el que se trabajará
+## ¿Qué es Bedu Store?
 
-Para definir el proyecto a realizar, se propusieron diferentes apps ya existentes en el mercado que resuelven una problemática del mundo real, entre las cuales destacaron las siguientes:
-
-- Reproductor de música estilo Spotify.
-- Administrador de gastos.
-- E-commerce estilo Mercado Libre.
-
-Así, a partir de las opciones propuestas y considerando la complejidad del flujo de interacción que implicaría desarrollar cada una de estas apps, se decidió trabajar sobre la opción del E-commerce.
+Bedu Store es un ecommerce para aplicaciones moviles Android, donde se venden distintos tipos de articulos para hombres, mujeres y niños, en la cual iniciando sesion con una cuenta registrada se puede visualizar informacion relevante de los articulos,
+explorar las categorias, añadir productos al carrito, añadir productos a favoritos, iniciar un proceso de compra y visualizar información de la cuenta.
 
 ## Alcances del proyecto
 
-Procurando que la realización del proyecto no sea muy complejo, se establecieron ciertos alcances para las acciones que se podrán realizar a través de la aplicación.
+Procurando que la realización del proyecto no sea muy complejo y que se alcancen a cubrir los requisitos, temas y propositos de aprendizaje, se establecieron ciertos alcances para las acciones que se podrán realizar a través de la aplicación.
 De esta manera, se definió que las acciones básicas a implementar serán las siguientes:
 - Iniciar sesión (para usuarios ya registrados).
 - Registrar una nueva cuenta de usuario.
-- Buscar un producto.
+- Navegar entre distintas categorias de usuario dependiendo los intereses.
 - Ver detalles de un producto.
 - Agregar productos a la sección de favoritos.
 - Agregar productos al carrito de compras.
-- Comprar uno o varios productos.
-- Ver los productos comprados anteriormente.
+- Iniciar un proceso de pago de articulos.
+- Ver los productos comprados anteriormente en una lista.
 - Ver el perfil del usuario.
-- Cerrar sesión
-
-## ¿Qué es Bedu Store?
-
-Bedu Store es un ecommerce para aplicaciones moviles Android, donde se venden distintos tipos de articulos para hombres, mujeres y niños, en cual iniciando sesion con una cuenta registrada se puede visualizar informacion relevante de los articulos,
-explorar la pagina, añadir al carrito, añadir a favoritos, iniciar un proceso de compra y visualizar informacion de la cuenta.
+- Cerrar sesión.
 
 
 ## ¿Cómo funciona Bedu Store?
 
-Al instalar la aplicacion en tu dispositivo movil, esta se veria algo asi entre las demas aplicaciones del mismo con un color azul y como logo un carrito de supermercado:
+Al instalar la aplicación en tu dispositivo mvil, esta se vería algo así entre las demás aplicaciones del mismo. El logo característico es azul con una imagen de carrito de supermercado:
 <p align="center">
   <img src="./app/src/assets/LogoApp.png" width="200" title="hover text">
 </p>
 
-Al ejecutar la aplicacion por primera vez, es decir, cuando comienza el ciclo de vida de la aplicacion esta se veria con una pantalla algo asi
+Al ejecutar la aplicación por primera vez, es decir, cuando comienza el ciclo de vida de la aplicación esta se vería con una pantalla algo asi:
 <p align="center">
   <img src="./app/src/assets/SplashScreen.PNG" width="200" title="hover text">
 </p>
 
-Una vez cargada la aplicacion, se le pedirá al usuario que Inicie Sesión con sus credenciales, [Aqui](#credenciales) puedes encontrar esas credenciales para empezar a usar Bedu Store:
+Una vez cargada la aplicación, se le pedirá al usuario que Inicie Sesión con sus credenciales, [Aqui](#credenciales) puedes encontrar esas credenciales para empezar a usar Bedu Store:
 <p align="center">
   <img src="./app/src/assets/LogInView.PNG" width="200" title="hover text">
 </p>
 
-La vista anterior te da la opción de registrarte pero debido a que no se cuenta con una base de datos para guardar el registro de usuarios por el momento no va a ser posible que un usuario quede registrado en la aplicacion,
-ests vista se ve algo asi:
+La vista anterior te da la opción de registrarte, al dar click al enlace de registro de cuenta, la pantalla que se mostrará después se verá algo así:
 <p align="center">
   <img src="./app/src/assets/RegisterView.PNG" width="200" title="hover text">
 </p>
 
-En esta vista podrás insertar datos relevantes que seran necesarios para recabar todos los datos mas importantes de los usuarios, como nombre completo, correo electronico, nombre de usuario y contraseña.
+En esta vista podrás insertar datos relevantes que serán necesarios para recabar la información de los usuarios, como nombre completo, correo electrónico, nombre de usuario y contraseña.
 <br>
-Una vez ingresadas las credenciales del usuario root se mostrará al usuario la pantalla principal de la aplicacion o pantalla home, en donde el menu superior muestra un menu de busqueda, se presentan la seccion de categorias de la app
-que se dividen en hombres, mujeres y niños, hay una slider del publico al que va dirigida la aplicacion y mas abajo hay un apartado de promocionales y publicaciones propias de la aplicación.app
+Una vez ingresadas las credenciales del usuario root se mostrará al usuario la pantalla principal de la aplicación o pantalla home, en donde el menu superior muestra un menu de búsqueda, se presentan la sección de categorias de la app
+que se dividen en hombres, mujeres y niños, hay una slider del publico al que va dirigida la aplicación y más abajo hay un apartado de promocionales y publicaciones propias de la aplicación.
 
 <p align="center">
   <img src="./app/src/assets/HomeView.PNG" width="200" title="hover text">
 </p>
 
-Desde esa vista, al dar click a cualquiera de las categorias se mostrará un listado de productos para cada una de las categorias, a continuación se muestran cada unas de las categorias y sus productos correspondientes:
+Desde esa vista, al dar click a cualquiera de las categorias se mostrará un listado de productos para cada una de las categorias. A continuación se muestran cada unas de las categorias y sus productos correspondientes:
 <br>
-### Menu Hombres
+### Menú Hombres
 <p align="center">
   <img src="./app/src/assets/MenListProducts.PNG" width="200" title="hover text">
 </p>
 
-### Menu Mujeres
+### Menú Mujeres
 <p align="center">
   <img src="./app/src/assets/WomenListProducts.PNG" width="200" title="hover text">
 </p>
 
-### Menu Niños
+### Menú Niños
 <p align="center">
   <img src="./app/src/assets/KidsListProducts.PNG" width="200" title="hover text">
 </p>
 
 Desde cualquiera de las listas de productos de cada una de las categorias existen dos opciones, una es dar click directamente en el icono del corazon, acción que llevará al usuario a la pantalla de Favoritos
-en la cual añadirá el producto en una lista donde se marcaran todos los articulos que el usuario quiera dejar fijados como productos para comprar despues, algo asi como una lista de deseos y asi el usuario no pueda
-perder de vista sus articulos favoritos para mas tarde añadirlos al carrito o bien, comprarlos.
+en la cual añadirá el producto en una lista donde se marcaran todos los artículos que el usuario quiera dejar fijados como productos para comprar después, algo asi como una lista de deseos y asi el usuario no pueda
+perder de vista sus artículos favoritos para más tarde añadirlos al carrito o bien, comprarlos.
 <p align="center">
   <img src="./app/src/assets/FavoriteAddItem.png" width="200" title="hover text">
 </p>
 
-Una vez añadido el producto en la vista de favoritos, el articulo se verá algo así.
+Una vez añadido el producto en la vista de favoritos, el artículo se verá algo así.
 
 <p align="center">
   <img src="./app/src/assets/FavoriteItem.PNG" width="200" title="hover text">
 </p>
 
-Regresando a la vista de articulos, si se le da click directamente al producto, llevará al usuario a una pantalla donde se mostraran los detalles del articulo, se mostrará información como fotografias del articulo, calificación,
-descripción, costo, se podrá seleccionar la cantidad, se podrán visualizar las especificaciones de las tallas, asi como la visualización de un estimado de dias para la entrega del producto en cuestion.
+Regresando a la vista de artículos, si se le da click directamente al producto, llevará al usuario a una pantalla donde se mostrarán los detalles del articulo, además de fotografias del articulo, calificación,
+descripción, costo, se podrá seleccionar la cantidad, se podrán visualizar las especificaciones de las tallas, asi como un estimado de días para la entrega del producto en cuestión.
 <p align="center">
   <img src="./app/src/assets/ProductDetail1.PNG" width="200" title="hover text">
 </p>
@@ -103,17 +92,17 @@ descripción, costo, se podrá seleccionar la cantidad, se podrán visualizar la
   <img src="./app/src/assets/ProductDetail2.PNG" width="200" title="hover text">
 </p>
 
-Para navegar a traves de la pagina no solo se puede hacer mediante botones que te lleven de un lado a otro en lugares especificos de la app, se cuenta con un menu de navegación entre las vistas mas importantes de la aplicación, entre ellas están las pantallas de home y favoritos, que ya se han mencionado anteriormente, asi como las vistas de mi carrito
+Para navegar a través de la app no sólo se puede hacer mediante botones que te lleven de un lado a otro en lugares específicos de la app. También se cuenta con un menú de navegación entre las vistas mas importantes de la aplicación, entre ellas están las pantallas de home y favoritos, que ya se han mencionado anteriormente, asi como las vistas de mi carrito
 y mi cuenta.
 <p align="center">
   <img src="./app/src/assets/NavigationMenu.PNG" width="200" title="hover text">
 </p>
-En la pantalla de mi carrito, el usuario podrá encontrar de manera directa los articulos que haya cargado a este para poder realizar su compra posteriormente. Esta pantalla se muestra a continuación:
+En la pantalla de mi carrito, el usuario podrá encontrar de manera directa los artículos que haya cargado a este para poder realizar su compra posteriormente. Esta pantalla se muestra a continuación:
 <p align="center">
   <img src="./app/src/assets/MyCartView.PNG" width="200" title="hover text">
 </p>
 
-Desde esta pantalla se pueden realizar algunas acciones tales como borrar los articulos añadidos:
+Desde esta pantalla se pueden realizar algunas acciones tales como borrar los artículos añadidos:
 <p align="center">
   <img src="./app/src/assets/DeletingItems.png" width="200" title="hover text">
 </p>
@@ -122,27 +111,27 @@ Desde esta pantalla se pueden realizar algunas acciones tales como borrar los ar
   <img src="./app/src/assets/CartItemsEmpty.PNG" width="200" title="hover text">
 </p>
 
-Tambien desde la vista de mi carrito se puede iniciar un proceso de pago y este se veria tal y como se muestra a continuación:
+Tambien desde la vista de mi carrito se puede iniciar un proceso de pago y este se vería tal y como se muestra a continuación:
 <p align="center">
   <img src="./app/src/assets/BuyNow.PNG" width="200" title="hover text">
 </p>
-A continuación se muestra otra de las pantallas principales de la aplicación. Esta es la pantalla de Mi cuenta, en esta se muestra la información del usuario,
-como su nombre, telefono celular, fotografia y correo electronico, ademas su informacion en base a la interaccion que ha tenido con la app, tal como cupones o total de compras.
-Esta vista se ve algo asi:
+Abajo se muestra otra de las pantallas principales de la aplicación. Esta es la pantalla de Mi cuenta, en esta se muestra la información del usuario,
+como su nombre, telefono celular, fotografia y correo electronico, además su información en base a la interacción que ha tenido con la app, tal como cupones o total de compras.
+Esta vista se ve algo as:
 <p align="center">
   <img src="./app/src/assets/MyAccountView.PNG" width="200" title="hover text">
 </p>
-A partir de la pantalla anterior, al dar click a la vista de mis compras, se mostrará el historial de las compras realizadas por el usuario desde que se registro a la app:
+A partir de la pantalla anterior, al dar click a la vista de mis compras, se mostrará el historial de las compras realizadas por el usuario desde que se registró a la app:
 <p align="center">
   <img src="./app/src/assets/MyPurchases.PNG" width="200" title="hover text">
 </p>
-Si regresamos a la vista de Mi cuenta, existe otra opcion, que es la de cerrar sesion, una vez dada la confirmación del usuario, la aplicacion volverá a mostrar la pantalla de iniciar seseión,
+Si regresamos a la vista de Mi cuenta, existe otra opción, que es la de cerrar sesión. Una vez dada la confirmación del usuario, la aplicacion volverá a mostrar la pantalla de iniciar seseión,
 para que vuelvan a ser insertadas las credenciales por el usuario y el proceso regresa a donde empezó...
 <p align="center">
   <img src="./app/src/assets/LogOut.PNG" width="200" title="hover text">
 </p>
 
-Para estilizar la aplicacion y mejorar la experiencia de usuario se agregaron algunos loaders y spinners, para simular la carga de datos de la consulta de un backend real. Aqui se muestran algunos ejemplos:
+Para estilizar la aplicación y mejorar la experiencia de usuario se agregaron algunos loaders y spinners, para simular la carga de datos de la consulta de un backend real. Aqui se muestran algunos ejemplos:
 <p align="center">
   <img src="./app/src/assets/LoaderExample.PNG" width="200" title="hover text">
 </p>
@@ -152,13 +141,13 @@ Para estilizar la aplicacion y mejorar la experiencia de usuario se agregaron al
 
 En el siguiente diagrama de flujo se muestra la navegacion de la applicacion en un caso de uso real:
 <p align="center">
-  <img src="./app/src/assets/DiagramaAppShop.jpg" width="500" title="hover text">
+  <img src="./app/src/assets/DiagramaAppShop.jpg" width="1000" title="hover text">
 </p>
 
 
 Visto desde otra perspectiva, el flujo de navegación del usuario es como se muestra en el siguiente esquema:
 <p align="center">
-  <img src="./app/src/assets/FlujoNavegacion.PNG" width="350" title="hover text">
+  <img src="./app/src/assets/FlujoNavegacion.PNG" width="500" title="hover text">
 </p>
 
 <a name="credenciales"></a>
