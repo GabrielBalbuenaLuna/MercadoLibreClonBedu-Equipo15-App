@@ -43,21 +43,15 @@ class MainProductList : AppCompatActivity() {
 
         args.putParcelableArrayList("LISTB", listProduct)
 
-        val guideline = findViewById<Guideline>(R.id.half)
-
         val listFragment = supportFragmentManager.findFragmentById(R.id.fragmentList) as? ListFragment
         listFragment?.arguments = args
         println("Mis products" + listFragment?.arguments)
         println("Mis products args" + args)
         listFragment?.setListener{
-            val productFragment = supportFragmentManager.findFragmentById(R.id.fragmentDetail) as? ProductFragment
-            if(productFragment!=null){
-                productFragment.showProduct(it)
-            } else {
                 val intent = Intent(this, DetailActivity::class.java)
                 intent.putExtra(DetailActivity.PRODUCT, it)
                 startActivity(intent)
-            }
+
         }
     }
 
