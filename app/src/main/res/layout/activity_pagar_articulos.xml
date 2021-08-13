@@ -13,7 +13,7 @@
         layout="@layout/compra_confirmada"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"/>
+        android:visibility="gone"/>
 
     <!--Encabezado -->
     <RelativeLayout
@@ -151,9 +151,31 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="188dp"
+        android:paddingVertical="100dp"
         android:layout_marginTop="12dp"
         android:background="@color/lightGray">
+
+    </RelativeLayout>
+
+    <!--Información Personal -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="24dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/misComprasButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="My Shops"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_buy_now"
+            />
 
     </RelativeLayout>
 
@@ -187,7 +209,7 @@
             android:textSize="24sp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/misComprasButton"
+            android:id="@+id/confirm_button"
             android:layout_below="@+id/textoTotal"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
@@ -200,7 +222,5 @@
             />
 
     </RelativeLayout>
-
-
 
 </LinearLayout>

@@ -37,7 +37,10 @@
     <string name="ej_list_item_categoria">Categoria ejemplo</string>
     <string name="con_mercado_pago">Con Mercado Pago</string>
     <string name="con_otras_formas_pago">Con otras formas de pago</string>
-    <string name="ej_list_item_tarjeta_credito">Ejemplo Tarjeta de Credito</string>
+    <string name="ej_list_item_tarjeta_credito">Debito Banco de Mexico</string>
+    <string name="ej_pago_efectivo">Dinero en efectivo</string>
+    <string name="ej_list_item_tarjeta_credito_dos">Credito Banco de Mexico</string>
+    <string name="ej_list_item_tarjeta_credito_tres">Platino Banco de Mexico</string>
 
     <string name="nombre">Nombre y Apellidos</string>
     <string name="celular">55 5555 5555</string>
@@ -45,7 +48,10 @@
     <string name="direccion">dirección</string>
     <string name="precio_total">$ 330.00</string>
 
-
+    <string name="payed">payed</string>
+    <string name="confirm_btn">confirm</string>
+    <string name="continue_btn">continue</string>
+    <string name="thanks_for_buy">Thanks for buy</string>
 
     <string name="quantityProduct">Quantity:</string>
     <string name="minusQuantity">-</string>

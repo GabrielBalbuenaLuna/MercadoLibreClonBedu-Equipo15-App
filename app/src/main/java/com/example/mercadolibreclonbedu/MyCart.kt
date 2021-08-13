@@ -10,23 +10,28 @@ import android.widget.Toast
 
 class MyCart : AppCompatActivity() {
 
-    private lateinit var misComprasButton : RelativeLayout
+    private lateinit var continueButton : Button
+
+    private lateinit var myShopsButton : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_cart)
 
-        misComprasButton = findViewById(R.id.misCompras_Button)
-        misComprasButton.setOnClickListener {
+        continueButton = findViewById(R.id.confirm_button)
+        myShopsButton = findViewById(R.id.misCompras_Button)
+        continueButton.setOnClickListener {
             intentPagar()
+        }
+        myShopsButton.setOnClickListener {
+
         }
     }
 
     fun intentPagar(){
-        Toast.makeText(this, "Presionaste el boton mis compras", Toast.LENGTH_LONG).show()
-        val intent = Intent(this, Pagar::class.java)
+        Toast.makeText(this, "Compra realizada", Toast.LENGTH_LONG).show()
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
-
     }
 
 }

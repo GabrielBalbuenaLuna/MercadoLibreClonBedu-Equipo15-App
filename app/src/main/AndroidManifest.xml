@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MercadoLibreClonBedu">
+        <activity android:name=".MyCart"></activity>
         <activity android:name=".Pagar_Articulos"></activity>
         <activity android:name=".Pagar" />
         <activity android:name=".Categorias" />

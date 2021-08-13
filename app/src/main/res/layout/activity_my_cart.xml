@@ -191,7 +191,7 @@
             android:layout_marginTop="8dp"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="Buy now"
+            android:text="Continue"
             android:textSize="20dp"
             android:textColor="@color/white"
             android:background="@drawable/button_buy_now"
