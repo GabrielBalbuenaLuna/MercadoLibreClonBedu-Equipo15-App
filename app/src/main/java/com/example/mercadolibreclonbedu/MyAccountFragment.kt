@@ -29,11 +29,11 @@ class MyAccountFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_my_account, container, false)
         val buttonCompras = view.findViewById<AppCompatButton>(R.id.buttonMisCompras)
-
-        // seteando el appbar como action bar
-        (activity as AppCompatActivity).setSupportActionBar(view.myAccount_bar)
-        val toolbar: Toolbar = view.findViewById(R.id.myAccount_bar) as Toolbar
-        toolbar.setTitle("") //Ocultar el titulo por defecto
+//
+//        // seteando el appbar como action bar
+//        (activity as AppCompatActivity).setSupportActionBar(view.myAccount_bar)
+//        val toolbar: Toolbar = view.findViewById(R.id.myAccount_bar) as Toolbar
+//        toolbar.setTitle("") //Ocultar el titulo por defecto
 
         buttonCompras.setOnClickListener {
             loadFragment(MisComprasFragment())

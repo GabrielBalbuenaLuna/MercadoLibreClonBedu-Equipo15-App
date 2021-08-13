@@ -33,11 +33,11 @@ class MainProductList : AppCompatActivity() {
             startActivity(intent)
 //            listProduct.add(Product("Wish List Empty", "", 0f, 0, 0, arrayListOf(), arrayListOf()))
         }
-
-        // seteando el appbar como action bar
-        setSupportActionBar(homeFragment_bar)
-        val toolbar: Toolbar? = findViewById(R.id.homeFragment_bar) as? Toolbar
-        toolbar?.setTitle("") //Ocultar el titulo por defecto
+//
+//        // seteando el appbar como action bar
+//        setSupportActionBar(homeFragment_bar)
+//        val toolbar: Toolbar? = findViewById(R.id.homeFragment_bar) as? Toolbar
+//        toolbar?.setTitle("") //Ocultar el titulo por defecto
 
         val args = Bundle()
 

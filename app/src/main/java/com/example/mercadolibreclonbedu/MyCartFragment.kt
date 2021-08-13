@@ -40,10 +40,10 @@ class MyCartFragment : Fragment() {
         val buttonComprar = view.findViewById<AppCompatButton>(R.id.buttonComprarAhora)
         val textView = view.findViewById<TextView>(R.id.precio_total)
         textView.text = "$$precio1"
-        // seteando el appbar como action bar
-        (activity as AppCompatActivity).setSupportActionBar(view.myCart_bar)
-        val toolbar: Toolbar = view.findViewById(R.id.myCart_bar) as Toolbar
-        toolbar.setTitle("") //Ocultar el titulo por defecto
+//        // seteando el appbar como action bar
+//        (activity as AppCompatActivity).setSupportActionBar(view.myCart_bar)
+//        val toolbar: Toolbar = view.findViewById(R.id.myCart_bar) as Toolbar
+//        toolbar.setTitle("") //Ocultar el titulo por defecto
 
         buttonComprar.setOnClickListener {
             loadFragment(Pagar())
