@@ -30,22 +30,22 @@ Al instalar la aplicación en tu dispositivo móvil podrás identificarla fácil
 
 Al ejecutar la aplicación por primera vez (en su inicio del ciclo de vida) se mostrará una pantalla de bienvenida como se observa a continuación:
 <p align="center">
-  <img src="./app/src/assets/SplashScreen.PNG" width="200" title="hover text">
+  <img src="./app/src/assets/SplashScreen.png" width="200" title="hover text">
 </p>
 
 Una vez iniciada la aplicación, se le pedirá al usuario que Inicie Sesión con sus credenciales ya registradas. [Aqui](#credenciales) puedes encontrar dichas credenciales que hemos creado para que puedas comenzar a utilizar Bedu Store:
 <p align="center">
-  <img src="./app/src/assets/LogInView.PNG" width="200" title="hover text">
+  <img src="./app/src/assets/LogInView.png" width="200" title="hover text">
 </p>
 
 La vista anterior también proporciona la posibilidad de registrarte en caso de que no tengas una cuenta. En esta vista podrás insertar datos relevantes que serán necesarios para recabar la información de los usuarios como: nombre completo, correo electrónico, nombre de usuario y contraseña.
 <br><br>
 Al dar click al enlace de registro de cuenta, la pantalla que se mostrará es la siguiente:
 <p align="center">
-  <img src="./app/src/assets/RegisterView.PNG" width="200" title="hover text">
+  <img src="./app/src/assets/RegisterView.png" width="200" title="hover text">
 </p>
 
-Una vez ingresadas las credenciales del usuario root se dirigirá al usu hacia la pantalla principal de la aplicación o pantalla home. En el menu superior de esta vista se muestra una barra de búsqueda y en el contenido se presenta la sección de categorias de la app
+Una vez ingresadas las credenciales del usuario root se dirigirá hacia la pantalla principal de la aplicación o pantalla home. En el menu superior de esta vista se muestra una barra de búsqueda y en el contenido se presenta la sección de categorias de la app
 que se divide en hombres, mujeres y niños, además, hay un slider del público al que va dirigida la aplicación y más abajo hay un apartado de promocionales y publicaciones propias:
 
 <p align="center">
