@@ -36,8 +36,8 @@ class MainProductList : AppCompatActivity() {
 
         // seteando el appbar como action bar
         setSupportActionBar(homeFragment_bar)
-        val toolbar: Toolbar = findViewById(R.id.homeFragment_bar) as Toolbar
-        toolbar.setTitle("") //Ocultar el titulo por defecto
+        val toolbar: Toolbar? = findViewById(R.id.homeFragment_bar) as? Toolbar
+        toolbar?.setTitle("") //Ocultar el titulo por defecto
 
         val args = Bundle()
 
@@ -45,9 +45,11 @@ class MainProductList : AppCompatActivity() {
 
         val guideline = findViewById<Guideline>(R.id.half)
 
-        val listFragment = supportFragmentManager.findFragmentById(R.id.fragmentList) as ListFragment
-        listFragment.arguments = args
-        listFragment.setListener{
+        val listFragment = supportFragmentManager.findFragmentById(R.id.fragmentList) as? ListFragment
+        listFragment?.arguments = args
+        println("Mis products" + listFragment?.arguments)
+        println("Mis products args" + args)
+        listFragment?.setListener{
             val productFragment = supportFragmentManager.findFragmentById(R.id.fragmentDetail) as? ProductFragment
             if(productFragment!=null){
                 productFragment.showProduct(it)
