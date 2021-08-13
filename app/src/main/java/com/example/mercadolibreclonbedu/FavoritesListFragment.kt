@@ -3,14 +3,15 @@ package com.example.mercadolibreclonbedu
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_favorites.*
+import kotlinx.android.synthetic.main.fragment_favorites.view.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
 import kotlinx.android.synthetic.main.fragment_list.*
 import kotlinx.android.synthetic.main.fragment_list.recyclerProducts
 import java.lang.NullPointerException
@@ -20,12 +21,22 @@ class FavoritesListFragment : Fragment() {
     private lateinit var mAdapter : RecyclerAdapterFavoriteProduct
     private var listener : (Product) ->Unit = {}
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val view = inflater.inflate(R.layout.fragment_favorites, container, false)
+        // seteando el appbar como action bar
+        (activity as AppCompatActivity).setSupportActionBar(view.favorites_bar)
+        val toolbar: Toolbar = view.findViewById(R.id.favorites_bar) as Toolbar
+        toolbar.setTitle("") //Ocultar el titulo por defecto
         // infla el layout para este Fragment
-        return inflater.inflate(R.layout.fragment_favorites, container, false)
+        return view
     }
 
     //generamos datos dummy con este método
@@ -63,7 +74,11 @@ class FavoritesListFragment : Fragment() {
     fun setListener(l: (Product) ->Unit){
         listener = l
     }
-
+    //Agregar el menú de opciones al AppBar
+    override fun onCreateOptionsMenu(menu: Menu, menuInflater: MenuInflater){
+        menuInflater.inflate(R.menu.toolbar_menu, menu)
+        return super.onCreateOptionsMenu(menu,menuInflater)
+    }
 
 
 }

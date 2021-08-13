@@ -7,40 +7,30 @@
     android:background="@color/lightGray">
 
     <!--Encabezado -->
-    <RelativeLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/headerFavorites"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="16dp"
-        android:background="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        >
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
-            android:layout_toLeftOf="@id/Account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/cart_outline" />
-        <TextView
-            android:id="@+id/Account"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/favoritesHeader"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:paddingHorizontal="40dp" />
-        <ImageView
-            android:layout_toRightOf="@id/Account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bell_outline" />
-    </RelativeLayout>
+        <androidx.appcompat.widget.Toolbar
+            app:navigationIcon="@drawable/cart_outline"
+            android:id="@+id/favorites_bar"
+            style="@style/Widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name">
+            <TextView
+                android:layout_gravity="center"
+                style="@style/Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/favoritesHeader"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerFavoriteProducts"

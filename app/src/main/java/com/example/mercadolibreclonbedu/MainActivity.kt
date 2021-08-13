@@ -1,11 +1,14 @@
 package com.example.mercadolibreclonbedu
 
+import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import io.paperdb.Paper
+import kotlinx.android.synthetic.main.fragment_login.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +29,14 @@ class MainActivity : AppCompatActivity() {
                 .add(R.id.fragment_container, MainFragment())
                 .commit()
         }
+
+        // Mensaje Iniciando sesión
+        val progressDialog = ProgressDialog(this)
+        progressDialog.setMessage("Loading user data...")
+        progressDialog.setCancelable(false)
+        progressDialog.show()
+
+        Handler().postDelayed({progressDialog.dismiss()},3500)
 
     }
 
