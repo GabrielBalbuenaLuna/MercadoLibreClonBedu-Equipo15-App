@@ -185,7 +185,7 @@
             android:textSize="24sp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/misCompras_Button"
+            android:id="@+id/confirm_button"
             android:layout_below="@+id/textoTotal"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
