@@ -40,17 +40,17 @@ que se dividen en hombres, mujeres y niños, hay una slider del publico al que v
 
 Desde esa vista, al dar click a cualquiera de las categorias se mostrará un listado de productos para cada una de las categorias, a continuación se muestran cada unas de las categorias y sus productos correspondientes:
 <br>
-###Menu Hombres
+### Menu Hombres
 <p align="center">
   <img src="./app/src/assets/MenListProducts.PNG" width="200" title="hover text">
 </p>
 
-###Menu Mujeres
+### Menu Mujeres
 <p align="center">
   <img src="./app/src/assets/WomenListProducts.PNG" width="200" title="hover text">
 </p>
 
-###Menu Niños
+### Menu Niños
 <p align="center">
   <img src="./app/src/assets/KidsListProducts.PNG" width="200" title="hover text">
 </p>
@@ -147,7 +147,26 @@ Bedu Store es desarrollada usando tecnologías como:
 
 - :gear: **Best Practices**: Flujo de trabajo sólido para mantener el código limpio y estructurado.
 
-## ¿Quienes mantienen y contribuyen a Bedu Store?
+- :bulb: **Figma**: Vistas siguiendo las especificaciones para obtener una UI amigable para el usuario.
+
+## ¿Cómo fué construído Bedu Store?
+Para la construcción de esta aplicación se implementaron todos los temas vistos en el Modulo de Kotlin Intermedio, se siguieron las buenas prácticas y se realizaron los diseños correspondientes
+a cada una de las pantallas en Figma, siguiendo los consejos y especificaciones del modulo de UI Fundamentals asi como los conocimientos adquiridos a lo largo del modulo de Kotlin fundamentals.
+Este proyecto contiene temas como:
+- Views (Constraint, LinearLayout, RelativeLayout, FrameLayout, etc)
+- Activities y Layouts
+- Listas
+- Fragments
+- Material Design
+- Menus
+- Styles
+
+Tambien se hizo uso de algunas librerias externas, para mas referencias de estas se adjuntan algunos links
+
+* https://github.com/smarteist/Android-Image-Slider
+* https://material.io/components
+* https://square.github.io/picasso/
+* https://github.com/denzcoskun/ImageSlideshow
 
 ## ¿Quienes mantienen y contribuyen a Bedu Store?
 
